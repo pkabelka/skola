@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="159.80693mm"
+   height="81.226196mm"
+   viewBox="0 0 159.80693 81.226196"
+   version="1.1"
+   id="svg5009"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="unipolarni-tranzistor.svg">
+  <defs
+     id="defs5003" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="330.04807"
+     inkscape:cy="101.33195"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5006">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-24.399647,-11.901526)">
+    <rect
+       style="fill:#ff7e7e;fill-opacity:1;stroke:#000000;stroke-width:0.26499999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5011"
+       width="96.751572"
+       height="48.375786"
+       x="55.057522"
+       y="39.619438" />
+    <path
+       style="fill:#00a0ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 55.057523,87.995222 c 0,0 19.510674,-9.2208 33.14142,-28.998745 13.630747,-19.777945 26.326047,-5.612659 30.869627,0 11.75987,14.566188 32.74053,28.998745 32.74053,28.998745 z"
+       id="path5179"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="137.62918"
+       y="50.247738"
+       id="text5183"><tspan
+         sodipodi:role="line"
+         id="tspan5181"
+         x="137.62918"
+         y="50.247738"
+         style="stroke-width:0.26458332">N</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="123.64406"
+       y="81.052795"
+       id="text5187"><tspan
+         sodipodi:role="line"
+         id="tspan5185"
+         x="123.64406"
+         y="81.052795"
+         style="stroke-width:0.26458332">P</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 151.8033,61.209047 h 27.40327"
+       id="path5189"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 54.923888,62.203711 H 29.399647"
+       id="path5191"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 103.43331,16.901526 v 17.90706"
+       id="path5193"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 88.867116,34.808586 H 116.79678"
+       id="path5195"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="31.561012"
+       y="57.174103"
+       id="text5199"><tspan
+         sodipodi:role="line"
+         id="tspan5197"
+         x="31.561012"
+         y="57.174103"
+         style="stroke-width:0.26458332">S - source</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="161.01785"
+       y="56.418144"
+       id="text5203"><tspan
+         sodipodi:role="line"
+         id="tspan5201"
+         x="161.01785"
+         y="56.418144"
+         style="stroke-width:0.26458332">D - drain</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="108.66814"
+       y="21.077372"
+       id="text5207"><tspan
+         sodipodi:role="line"
+         id="tspan5205"
+         x="108.66814"
+         y="21.077372"
+         style="stroke-width:0.26458332">G - gate</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="108.85714"
+       y="30.33779"
+       id="text5211"><tspan
+         sodipodi:role="line"
+         id="tspan5209"
+         x="108.85714"
+         y="30.33779"
+         style="stroke-width:0.26458332">+</tspan></text>
+  </g>
+</svg>

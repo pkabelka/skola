@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="158.79338mm"
+   height="152.44998mm"
+   viewBox="0 0 158.79338 152.44998"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="geometrie-disku.svg">
+  <defs
+     id="defs2">
+    <marker
+       id="Arrow1Mend"
+       style="overflow:visible"
+       orient="auto"
+       refY="0"
+       refX="0">
+      <path
+         id="path6"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;marker-start:none"
+         transform="scale(-0.4)"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <style
+       id="style8"
+       type="text/css" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="187.61622"
+     inkscape:cy="218.26509"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-42.218996,-12.857507)">
+    <circle
+       cx="100.26795"
+       cy="88.926598"
+       r="52.916664"
+       style="fill:#e0e0e0;stroke:#000000;stroke-width:0.26458332"
+       id="radius200" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 116.2219,61.48373 c -13.79845,-7.966882 -31.443592,-4.525643 -41.143252,8.114966 -9.69967,12.640606 -8.52837,30.512544 2.73814,41.779054 11.26651,11.26651 29.138452,12.43782 41.779052,2.73815 12.64061,-9.69967 16.13449,-27.265855 8.1676,-41.064307 l -2.29129,1.322917 c 7.30298,12.648581 4.10026,28.75092 -7.48696,37.64228 -11.58723,8.89136 -27.969832,7.81766 -38.297472,-2.50997 -10.32763,-10.327633 -11.40133,-26.710244 -2.50997,-38.297468 8.89137,-11.587223 25.085812,-14.750465 37.734392,-7.447491 z"
+       style="fill:#ff8080;stroke:#ff0000;stroke-width:0.26458332"
+       id="track" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 106.86937,77.493807 c 2.01126,1.161785 3.69435,2.806311 4.85503,4.818203 L 146.09378,62.46826 C 141.44992,54.423604 134.994,47.861498 126.94998,43.216545 Z"
+       style="fill:#8080ff;stroke:#0000ff;stroke-width:0.26458332;stroke-opacity:1"
+       id="sector" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 116.26137,61.510048 c 4.82622,2.786533 8.71554,6.715334 11.50207,11.541545 l -2.29129,1.322917 c -2.55432,-4.424027 -6.13598,-8.045167 -10.56001,-10.599489 z"
+       style="fill:#a000a0;stroke:#ff00ff;stroke-width:0.26458332"
+       id="sectorOfTrack" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 76.455448,130.17106 c 22.778677,13.15128 51.905682,5.34673 65.056952,-17.43196 l -2.29135,-1.32292 c -12.42066,21.51321 -39.929485,28.88417 -61.442692,16.46352 z"
+       style="fill:#00a000;stroke:#00ff00;stroke-width:0.26458332"
+       id="cluster" />
+    <circle
+       cx="100.26795"
+       cy="88.926598"
+       r="13.229166"
+       style="opacity:1;fill:#ffffff;stroke:#000000;stroke-width:0.26458332"
+       id="radius50" />
+    <path
+       inkscape:connector-curvature="0"
+       d="M 100.40017,88.742427 111.715,82.268205 c -1.40674,-2.359972 -3.007,-3.697962 -4.81366,-4.816308 z"
+       style="opacity:1;fill:#8080ff;fill-opacity:1;stroke:#0000ff;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:0.26458333, 0.26458333;stroke-dashoffset:0;stroke-opacity:1"
+       id="path2208" />
+    <circle
+       cx="100.26795"
+       cy="88.926598"
+       r="15.875"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="radius60" />
+    <circle
+       cx="100.26795"
+       cy="88.926598"
+       r="18.520834"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="radius70" />
+    <circle
+       cx="100.26795"
+       cy="88.926598"
+       r="21.166666"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="radius80" />
+    <circle
+       cx="100.26795"
+       cy="88.926598"
+       r="23.8125"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="radius90" />
+    <circle
+       cx="100.26795"
+       cy="88.926598"
+       r="26.458332"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="radius100" />
+    <circle
+       cx="100.26795"
+       cy="88.926598"
+       r="29.104166"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="radius110" />
+    <circle
+       cx="100.26795"
+       cy="88.926598"
+       r="31.75"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="radius120" />
+    <circle
+       cx="100.26795"
+       cy="88.926598"
+       r="34.395832"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="radius130" />
+    <circle
+       cx="100.26795"
+       cy="88.926598"
+       r="37.041668"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="radius140" />
+    <circle
+       cx="100.26795"
+       cy="88.926598"
+       r="39.6875"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="radius150" />
+    <circle
+       cx="100.26795"
+       cy="88.926598"
+       r="42.333332"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="radius160" />
+    <circle
+       cx="100.26795"
+       cy="88.926598"
+       r="44.979168"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="radius170" />
+    <circle
+       cx="100.26795"
+       cy="88.926598"
+       r="47.625"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="radius180" />
+    <circle
+       cx="100.26795"
+       cy="88.926598"
+       r="50.270832"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="radius190" />
+    <line
+       id="0"
+       class="simple"
+       x1="113.49711"
+       y1="88.926598"
+       x2="153.1846"
+       y2="88.926598"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332" />
+    <line
+       id="30"
+       class="simple"
+       x1="146.09377"
+       y1="62.468262"
+       x2="111.7244"
+       y2="82.312019"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332" />
+    <line
+       id="60"
+       class="simple"
+       x1="126.72626"
+       y1="43.629925"
+       x2="106.88252"
+       y2="77.470146"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332" />
+    <line
+       id="90"
+       class="simple"
+       x1="100.26795"
+       y1="36.009926"
+       x2="100.26795"
+       y2="75.697433"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332" />
+    <line
+       id="120"
+       class="simple"
+       x1="73.809608"
+       y1="43.629925"
+       x2="93.653358"
+       y2="77.470146"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332" />
+    <line
+       id="150"
+       class="simple"
+       x1="54.971283"
+       y1="62.468262"
+       x2="88.811485"
+       y2="82.312019"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332" />
+    <line
+       id="180"
+       class="simple"
+       x1="47.35128"
+       y1="88.926598"
+       x2="87.03878"
+       y2="88.926598"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332" />
+    <line
+       id="210"
+       class="simple"
+       x1="54.971283"
+       y1="115.38493"
+       x2="88.811485"
+       y2="95.541176"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332" />
+    <line
+       id="240"
+       class="simple"
+       x1="73.809608"
+       y1="134.75243"
+       x2="93.653358"
+       y2="100.38306"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332" />
+    <line
+       id="270"
+       class="simple"
+       x1="100.26795"
+       y1="102.15578"
+       x2="100.26795"
+       y2="141.84326"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332" />
+    <line
+       id="300"
+       class="simple"
+       x1="126.72626"
+       y1="134.75243"
+       x2="106.88252"
+       y2="100.38306"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332" />
+    <line
+       id="330"
+       class="simple"
+       x1="146.09377"
+       y1="115.38493"
+       x2="111.7244"
+       y2="95.541176"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 117.38775,25.034625 -9.2447,34.501663 z"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="arrowA" />
+    <text
+       x="115.22903"
+       y="24.141361"
+       style="font-style:normal;font-size:8.46666622px;font-family:'Bitstream Vera Sans';stroke-width:0.26458332"
+       id="text43">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         id="tspan958">Stopa</tspan>
+    </text>
+    <path
+       inkscape:connector-curvature="0"
+       d="m 150.93859,46.408872 -11.08157,9.187812 z"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="arrowC" />
+    <text
+       x="151.23633"
+       y="47.599884"
+       style="font-style:normal;font-size:8.46666622px;font-family:'Bitstream Vera Sans';stroke-width:0.26458332"
+       id="text46">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         id="tspan962">Sektor</tspan>
+    </text>
+    <path
+       inkscape:connector-curvature="0"
+       d="M 142.78567,38.255946 119.8261,65.618095 Z"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="arrowB" />
+    <text
+       x="142.78566"
+       y="38.255943"
+       style="font-style:normal;font-size:8.46666622px;font-family:'Bitstream Vera Sans';stroke-width:0.26458332"
+       id="text49">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         id="tspan960">Sektor stopy</tspan>
+    </text>
+    <path
+       inkscape:connector-curvature="0"
+       d="m 117.38775,152.81857 -5.13594,-19.16759 z"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332"
+       id="arrowD" />
+    <text
+       x="115.49286"
+       y="160.18761"
+       style="font-style:normal;font-size:8.46666622px;font-family:'Bitstream Vera Sans';stroke-width:0.26458332"
+       id="text52">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         id="tspan964">Cluster</tspan>
+    </text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot966"
+       style="font-style:normal;font-weight:normal;font-size:13.33333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       transform="scale(0.26458333)"><flowRegion
+         id="flowRegion968"><rect
+           id="rect970"
+           width="41.416256"
+           height="24.243662"
+           x="595.98999"
+           y="64.889969" /></flowRegion><flowPara
+         id="flowPara972"></flowPara></flowRoot>    <text
+       x="150.35405"
+       y="20.057932"
+       style="font-style:normal;font-size:8.46666622px;font-family:'Bitstream Vera Sans';stroke-width:0.26458332"
+       id="text49-7">
+      <tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.26458332"
+         id="tspan960-6" />
+    </text>
+  </g>
+</svg>
