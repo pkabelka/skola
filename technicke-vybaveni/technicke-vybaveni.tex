@@ -1265,4 +1265,353 @@ u asynchronní je datová sběrnice obsazena vždy
 \item informaci nese každá změna z 1 na 0 a z 0 na 1
 \end{itemize}
 
+\subsubsection{CD-RW}
+
+vrstvy:
+\begin{itemize}
+  \tightlist
+  \item[] 7. ochranný lak
+  \item[] 6. reflexní fólie
+  \item[] 5. dielektrická vrstva
+  \item[] 4. záznamový film
+  \item[] 3. dielektrická vrstva
+  \item[] 2. předdefinovaná drážka
+  \item[] 1. polykarbonát
+  \newline
+  \item datová vrstva je tvořena ze slitiny, která má při původní teplotě
+  krystalickou strukturu -- v této formě má o 10\% vyšší odrazivost
+  \item při zahřátí se z krystalické struktury stane amorfní struktura
+  \item \textbf{zápis}
+  \begin{itemize}
+    \tightlist
+    \item výkon desítky mW, teplota až 600°C
+    \item amorfní struktura představuje \emph{pit}
+  \end{itemize}
+  \item \textbf{mazání}
+  \begin{itemize}
+    \tightlist
+    \item výkon 8--10~mW, zahřátím amorfní struktury se z ní stane krystalická
+    struktura
+    \item krystalická struktura představuje \emph{land}
+  \end{itemize}
+  \item \textbf{rozhraní}: ATA, SATA, SCSI
+  \item \textbf{přístupová doba}: doba potřebná k nalezení dat na disku; 200~ms,
+  lepší i 100~ms
+  \item \textbf{přenosová rychlost}: původní formát CD-DA měl 150~kB/s,
+  rychlosti CD-RW jsou násobky této hodnoty: 2x, 4x, ...-- 52x
+\end{itemize}
+
+\paragraph{Mechaniky}
+
+\begin{itemize}
+  \tightlist
+  \item čtecí, vypalovací
+  \item dělení podle rychlosti:
+  \begin{itemize}
+    \tightlist
+    \item CLV
+    \begin{itemize}
+      \tightlist
+      \item constant linear velocity
+      \item konstantní datový tok -- stejná přenosová rychlost
+      \item rychlost otáček se mění
+      \item u středu 530~RPM, na okraji 230~RPM
+    \end{itemize}
+    \item CAV
+    \begin{itemize}
+      \tightlist
+      \item constant angular velocity
+      \item konstantní rychlost otáčení
+      \item přenosová rychlost kolísá
+      \item výrobce udává pouze jednu rychlost (většinou maximální)
+    \end{itemize}
+    \item P-CAV
+    \begin{itemize}
+      \tightlist
+      \item partial constant angular velocity
+      \item vyšší datový tok
+      \item vyšší výkon u středu
+    \end{itemize}
+    \item multi-beam čtení
+    \begin{itemize}
+      \tightlist
+      \item umí přečíst až 7 stop zárověň
+      \item velké přenosové rychlosti: bez zvyšování otáček
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\paragraph{Logická struktura disku}
+
+\begin{itemize}
+  \tightlist
+  \item \textbf{kalibrační oblast}: nastaví se výkon disku
+  \item \textbf{PMA}: počet stop a jejich umístění
+  \item \textbf{session}: může obsahovat jednu nebo více stop jednoho typu
+  \item \textbf{lead-in}: začátek každé session
+  \item \textbf{lead-out}: konec každé session
+  \item \textbf{multi-session disk}: pokud není uzavřený, lze na něj příště
+  připisovat
+\end{itemize}
+
+\paragraph{EFM}
+
+\begin{itemize}
+  \tightlist
+  \item eight to fourteen modulation
+  \item překódování dat z 8~b na 14~b CD; z 8~b ba 16~b u DVD
+  \item provádí se podle kódovací tabulky
+  \item provádí se pro snížení chyb
+  \item přeodovaný bit se nazývá \emph{channel bit}
+  \item kanálový bit je přechod mezi 1 a 0
+  \item délka landu nebo pitu je počet kanálových bitů
+  \item nikdy se neopakují dvě logické 1 za sebou
+  \item nejmenší vzdálenost jsou 3~b
+  \item max délka je 11~b
+  \item pokud jsou za sebou 14 bitové kódy začínající a končící 1, molo by dojít
+  k chybě \textrightarrow{} mezi kódová slova se vkládají slučovací bity
+\end{itemize}
+
+\subsubsection{DVD}
+
+\begin{itemize}
+  \tightlist
+  \item mechanika je zpětně kompatibilní s CD
+  \item průměr 12~cm
+  \item tloušťka 1.2~mm
+  \item jedna vrstva má kapacitu 4.7~GB
+  \item dvě vrstvy mají kapacitu 8.5~GB
+  \item vlnová délka laserového paprsku: 640~nm
+\end{itemize}
+
+\begin{minipage}[t]{0.3\textwidth}
+  \textbf{jednovrstvé a \\jednostranné}
+  \begin{itemize}
+    \tightlist
+    \item[5.] potisk
+    \item[4.] polykarbonát
+    \item[3.] reflexní vrstva
+    \item[2.] stopa
+    \item[1.] polykarbonát
+  \end{itemize}
+\end{minipage}%
+\begin{minipage}[t]{0.4\textwidth}
+  \textbf{dvouvrstvé}
+  \begin{itemize}
+    \tightlist
+    \item[8.] potisk
+    \item[7.] polykarbonát
+    \item[6.] reflexní vrstva
+    \item[5.] záznamová vrstva -- stopa L1
+    \item[4.] distanční vrstva
+    \item[3.] polopropustná reflexní vrstva
+    \item[2.] záznamová vrstva -- stopa L0
+    \item[1.] polykarbonát
+  \end{itemize}
+\end{minipage}%
+\begin{minipage}[t]{0.3\textwidth}
+  \textbf{oboustranné}
+  \begin{itemize}
+    \tightlist
+    \item[5.] polykarbonát
+    \item[4.] stopa
+    \item[3.] reflexní vrstva
+    \item[2.] stopa
+    \item[1.] polykarbonát
+  \end{itemize}
+\end{minipage}
+
+\vspace{5mm}
+
+\paragraph{Formáty}
+
+\begin{itemize}
+  \tightlist
+  \item \textbf{fyzické}: DVD-ROM, DVD-R, DVD+R, DVD$\pm$RDL, DVD-RAM
+  \begin{itemize}
+    \tightlist
+    \item DVD-RAM má kruhové stopy jako hard disk, pracuje se s ním jako s hard
+    diskem
+    \item slouží k zálohování dat
+    \item lze 100~000x přepsat
+  \end{itemize}
+  \item \textbf{aplikační formáty}: DVD video, DVD audio, DVD data
+\end{itemize}
+
+\begin{tabular}{|l|c|c|}
+  \hline
+  & \textbf{CD} & \textbf{DVD} \\ \hline
+  \textbf{průměr} & \multicolumn{2}{|c|}{12~cm} \\ \hline
+  \textbf{tloušťka} & \multicolumn{2}{|c|}{1.2~mm} \\ \hline
+  \textbf{vzdálenost pitů} & 1600~nm & 740~nm \\ \hline
+  \textbf{délka pitu} & 834~nm & 400~nm \\ \hline
+  \textbf{vlnová délka} & 700~nm & 640~nm \\ \hline
+  \textbf{kapacita} & 700~MB & 4.7~GB -- 17~GB \\ \hline
+\end{tabular}
+
+\vspace{5mm}
+
+\textbf{regionální zámek} -- aby bylo možné disk přehrát, musí mít mechanika
+stejný kód jako disk
+
+\subsubsection{Blu-ray}
+
+\begin{itemize}
+  \tightlist
+  \item průměr: 12~cm; tloušťka: 1.2~mm
+  \item data jsou zapsána 0.1~mm pod povrchem
+  \item vlnovná délka: 405~nm
+  \item stopa je užší
+  \item menší pity
+  \item jedna vrstva: 25~GB \textrightarrow{} dvě vrstvy: 50~GB
+  \item \textbf{formáty}: BD-ROM, BD-R, BD-RE
+\end{itemize}
+
+\subsubsection{HD DVD}
+
+\begin{itemize}
+  \tightlist
+  \item stejná struktura jako DVD
+  \item vrstvy jsou do 0.6~mm
+  \item méně náchylné na poškrábání
+  \item vlnová délka paprsku stejná jako u Blu-ray: 405~nm
+  \item kapacita jedné vrstvy: 15~GB
+  \item max 3 vrstvy
+\end{itemize}
+
+\subsubsection{ISRC}
+
+\begin{itemize}
+  \tightlist
+  \item international standard recording code
+  \item mezinárodní kód pro nahrávky a videoklipy
+  \item složení: kód státu, nahrávky, výrobce
+  \item mohou přidělovat pouze registrované firmy
+  \item je protřeba pokud chceme nahrávky prodávat
+\end{itemize}
+
+\subsection{Flash}
+
+\begin{itemize}
+  \tightlist
+  \item polovodičová paměť
+  \item non-volatilní
+  \item programově elektricky mazatelná
+  \item použití:
+  \begin{itemize}
+    \tightlist
+    \item SSD disky, karty, flash disky USB
+    \item uložení BIOSu
+    \item součást různých karet
+  \end{itemize}
+  \item[] \includegraphics[width=15cm]{ref/blokove-schema-flash-pameti.png}
+  \item {\large ČTE SE PO SLOVECH; ZAPISUJE A MAŽE SE PO BLOCÍCH}
+  \item[]
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=8cm]{ref/flash-tranzistor.png}
+  \end{minipage}%
+  \begin{minipage}[b]{0.6\textwidth}
+    \begin{itemize}
+      \tightlist
+      \item floating gate je izolovaná
+      \item elektrony na ní zůstanou díky izolaci z oxidu křemičitého
+      \item nenaprogramovaná buňka nemá náboj na plovoucím hradle = log. 1
+      \item přivedením náboje se naprogramuje = log. 0
+    \end{itemize}
+  \end{minipage}
+  \item všechny buňky v rámci bloku musí být mazány současně
+  \item hradlo NAND
+  \item lze zapisovat na celou plochu
+  \item maximální počet zápisů: 100~000 pro akždou buňku
+  \item výhoda SSD: rychlost, jsou spolehlivější -- bez mechanických částic
+  \item nevýhoda: cena
+\end{itemize}
+
+\subsection{CACHE paměti}
+
+\begin{itemize}
+  \tightlist
+  \item rychlá vyrovnávací paměť
+  \item mezi CPU a RAM
+  \item cache je i v hard disku
+  \item paměť pro čtení, CPU nevytváří nové položky
+  \item druhy
+  \begin{itemize}
+    \tightlist
+    \item \textbf{asociativní}: vyhledává se podle klíče
+    \item \textbf{neasociativní}: vyhledává se podle adresy
+    \item \textbf{využívající virtuální adresaci}: podle logické adresy
+    \item \textbf{fyzická adresace}: adresa se vypočítá a vyhledá se
+    \item \textbf{počet položek na jeden řád}: více-cestnost: 1, 2, 4, 8, ...
+    položek
+    \item \textbf{synchronní}: sběrnici je možno použít i pro jiné účely
+    \item \textbf{asynchronní}: málo se používají pro cache
+    \item \textbf{vnitřní}: integrována na čipu procesoru
+    \begin{itemize}
+      \tightlist
+      \item \textbf{on-die}: na čipu v rámci pouzdra
+      \item \textbf{off-die}: na více čipech v rámci pouzdra
+    \end{itemize}
+    \item \textbf{vnější}
+    \begin{itemize}
+      \tightlist
+      \item L1, L2, L3
+      \item L1 bývá vnitřní, ale může být vnější
+    \end{itemize}
+  \end{itemize}
+  \item \textbf{podle přístupu}
+  \begin{itemize}
+    \tightlist
+    \item \textbf{write back}
+    \begin{itemize}
+      \tightlist
+      \item data se zapisují do cache a do operační paměti se zapíší až budou
+      potřeba, nebo se zapisují v intervalu
+      \item data se nazapisují při změně
+    \end{itemize}
+    \item \textbf{write through}: data se zapisují zárověň do operační paměti
+  \end{itemize}
+  \item \textbf{transparentní}: sleduje změny v okolí
+  \item \textbf{netransparentní}: nesleduje změny v okolí
+  \item \textbf{víceportová}: napojena na více sběrnic; 1 port pro CPU, 1 port
+  pro RAM
+  \item \textbf{podle obsahu}
+  \begin{itemize}
+    \tightlist
+    \item společná data, instrukce
+    \item instrukce
+    \item data
+  \end{itemize}
+  \item \textbf{podle vzdálenosti od CPU}: L1, L2, L3
+\end{itemize}
+
+\subsubsection{CACHE 486}
+
+\includegraphics[width=\textwidth]{ref/cache-486.png}
+
+\begin{itemize}
+  \tightlist
+  \item čtení
+  \begin{itemize}
+    \tightlist
+    \item 4 cestně asociativní -- obsahuje 4x 128 klíčů = 486
+    \item adresa je stejná i pro operační paměť
+    \item adresa je přivedena na dekodér, ten vybere jeden z řádků --
+    neasociativní vyhledávání
+    \item nejvyšších 24~b = klíč -- klíč je komparátorem porovnán proti klíčům
+    na vybraném řádku
+    \item nastane shoda: pomocí nejnižších 4~b z adresy (slabika) se vyberou data
+  \end{itemize}
+  \item zápis
+  \begin{itemize}
+    \tightlist
+    \item ke každému klíči je přiřazen 1 bit pro validitu
+    \item otestuje se platnost
+    \item je-li klíč neplatný (validita 0) -- je možno ho použít pro zápis
+    \item jsou-li všechny klíče platné, použije se algoritmus LRU -- last
+    recently used
+    \item vyhodí nejstarší klíč a zapíše nový
+  \end{itemize}
+\end{itemize}
+
 \end{document}
