@@ -56,4 +56,7 @@
 * national symbol: maple leaf, beaver
 * famous Canadians:
     * first Canadian to walk in space: Chris Hadfield
-    * singer Justin Bieber
+    * singers: Justin Bieber, Neil Young, Avril Lavigne, Bryan Adams
+    * bands: Crash Test Dummies, Sum 41, Three Days Grace, Simple Plan, Theory of a Deadman, Silverstein
+    * hockey players: Wayne Gretzky (shit-ton of records), Sidney Crosby, Mario Lemieux, Bobby Orr, 
+    
