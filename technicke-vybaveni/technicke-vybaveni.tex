@@ -1617,6 +1617,7 @@ stejný kód jako disk
 \section{USB}
 
 \begin{itemize}
+  \tightlist
   \item univerzální sériová sběrnice (mezi procesorem a sběrnicí je řadič)
   \item nehrazuje paralerní, sériový port, PS/2
   \item klávesnice, myš
@@ -1632,6 +1633,7 @@ stejný kód jako disk
 %%obrázek
 
 \begin{itemize}
+  \tightlist
   \item každá USB sběrnice má kořenový HUB vše ostatní je připojeno k němu 
   \item host controller je implementován hardwarově i softwarově
   \item navrženo na max 7 úrovní, protože na hubech dochází ke zrácení signálu
@@ -1645,7 +1647,7 @@ stejný kód jako disk
   \item složené zařízení obsahuje vestavěný HUB
   \item downstream od kořenem
   \item upstream ke kořenu
-  \item konektor typu A - na počítači,na HUBu
+  \item konektor typu A - na počítači, na HUBu
   \item konektor typu B - na tiskárně, mini B, micro B
   \item konektor typu C - oboustranný, symetrický, USB 3.1
 \end{itemize}
@@ -1657,11 +1659,13 @@ stejný kód jako disk
 \begin{tabular}{ll}
   USB 1.1 low speed 1,5~Mb/s & \rdelim\}{3}{1mm}[\hspace{2mm} half duplex] \\
   \hspace{17mm}full speed 12~Mb/s  \\
-  USB 2.0 - high speed - 48~Mb/s
+  USB 2.0 - high speed - 480~Mb/s
 \end{tabular}
 \begin{itemize}
-  \item USB 3.0, 3.1 - superspeed - 56Mb/s, 106 Mb/s \} full duplex
+  \tightlist
+  \item USB 3.0, 3.1 - superspeed - 5~Gb/s, 10~Gb/s \} full duplex
   \begin{itemize}
+    \tightlist
     \item verze jsou kompatibilní mezi sebou
     \item při zapojení pomalejší do rychlejší se komunikuje s nižší rychlostí pouze mezi prvky s nízkou rychlostí = nespomalí celek
   \end{itemize}
@@ -1670,6 +1674,7 @@ stejný kód jako disk
 \section{Základní deska}
 
 \begin{itemize}
+  \tightlist
   \item základní HW počítače
   \item obsahuje elektrické součástky a konektory
   \item hlavní úkol propojit součástky v PC a poskytuje napájení
@@ -1682,9 +1687,11 @@ stejný kód jako disk
 \subsection{Chipset}
 
 \begin{itemize}
+  \tightlist
   \item nejdůležitější integrované obvody základní desky
   \item 2 chipy:
   \begin{itemize}
+    \tightlist
     \item South bridge
     \item North bridge
   \end{itemize}
@@ -1716,6 +1723,7 @@ stejný kód jako disk
 \subsection{Timer-counter}
 
 \begin{itemize}
+  \tightlist
   \item odměřuje časové zpoždění
   \item vytváří zpoždění
   \item dočítá když se něco opakuje
@@ -1723,13 +1731,15 @@ stejný kód jako disk
   
 \subsection{PCI}
 \begin{itemize}
+  \tightlist
   \item PCI express rychlejší než PCI
-  \item super IIo čip - myš, klávesnice
+  \item super IO čip -- myš, klávesnice
 \end{itemize}
 
 %%schéma procesoru s jedním čipem
 
 \begin{itemize}
+  \tightlist
   \item dříve řadič v severním můstku a když chtěl CPU komunikovat s pamětí musel jít přes severní můstek = pomalejší
   \item paměť modulů může být až 6
 \end{itemize}
