@@ -8,12 +8,16 @@
 \usepackage{graphicx}% images
 \usepackage{multirow,bigdelim}
 \usepackage{array}
+\usepackage{enumitem}% list options
+\usepackage{tikz}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
 
 % centered table cell "p"
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 
 \setcounter{secnumdepth}{5}% deeper heading numbering
-% Word-like margins
+% LibreOffice-like margins
 \addtolength{\oddsidemargin}{-2cm}
 \addtolength{\evensidemargin}{-2cm}
 \addtolength{\textwidth}{4cm}
@@ -23,7 +27,7 @@
 \providecommand{\tightlist}{%
 \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-\title{Technické vybavení}
+\title{Technické vybavení pro 4.~ročník}
 \author{}
 \date{}
 
@@ -896,7 +900,7 @@ rezerva & & 2~B \\ \hline
 
 \begin{itemize}
 \tightlist
-\item[] \includegraphics[width=12.46cm]{ref/casovy-diagram-dynamicke-pameti.png}
+\item[] \includegraphics[width=10cm]{ref/casovy-diagram-dynamicke-pameti.png}
 \item časování v nanosekundách 5 - 2 - 2 - 2
 \end{itemize}
 
@@ -905,16 +909,15 @@ rezerva & & 2~B \\ \hline
 \begin{itemize}
 \tightlist
 \item datová sběrnice je obsazená pouze kdy se čtou nebo zapisují data
+\item u~asynchronní je datová sběrnice obsazena vždy
 \end{itemize}
-
-u asynchronní je datová sběrnice obsazena vždy
 
 \begin{itemize}
 \tightlist
-\item CS -- chip select -- výběr obvodu, který bude reagovat
-
+\item CS -- chip select
   \begin{itemize}
   \tightlist
+  \item výběr obvodu, který bude reagovat
   \item negovaný z bezpečnosti, aby při přerušení vše zůstalo nefunkční
   \end{itemize}
 \item AB -- adresový sběrnice
@@ -1510,7 +1513,7 @@ stejný kód jako disk
   \begin{minipage}[b]{0.4\textwidth}
     \includegraphics[width=8cm]{ref/flash-tranzistor.png}
   \end{minipage}%
-  \begin{minipage}[b]{0.6\textwidth}
+  \begin{minipage}[b]{0.5\textwidth}
     \begin{itemize}
       \tightlist
       \item floating gate je izolovaná
@@ -1624,13 +1627,13 @@ stejný kód jako disk
   \item řízení sběrnice master, slave
   \item až 127 zařízení v síti USB
   \item podporuje synchronní (isochronní) přenosy
-  \item přenosová rychlost od 1~Mb/s - Gb/s
-  \item podporuje plug n play (autoconfig), hotswap
+  \item přenosová rychlost od 1~Mb/s--10Gb/s
+  \item podporuje plug'n'play (autoconfig), hotswap
   \item podporuje napájení z USB rozhraní
   \item vrstvená hvězdicová topologie
 \end{itemize}
 
-%%obrázek
+\includegraphics{ref/usb-structure.png}
 
 \begin{itemize}
   \tightlist
@@ -1638,8 +1641,8 @@ stejný kód jako disk
   \item host controller je implementován hardwarově i softwarově
   \item navrženo na max 7 úrovní, protože na hubech dochází ke zrácení signálu
   \item mezi kořenem a posledním zařízením může být maximálně 5 hubů
-  \item host je v systému jediný (počítač) na roli master = řídí procesy
-  \item rozbočovač - HUB: obsahuje řadič, opakovač, převaděč
+  \item host je v systému jediný (počítač) na roli master -- řídí procesy
+  \item rozbočovač (HUB) -- obsahuje řadič, opakovač, převaděč
   \item distribuuje nebo shromažďuje přenosy
   \item dokáže překládat rychlosti
   \item napájen ze sběrnice nebo vlastní napájení
@@ -1647,27 +1650,26 @@ stejný kód jako disk
   \item složené zařízení obsahuje vestavěný HUB
   \item downstream od kořenem
   \item upstream ke kořenu
-  \item konektor typu A - na počítači, na HUBu
-  \item konektor typu B - na tiskárně, mini B, micro B
-  \item konektor typu C - oboustranný, symetrický, USB 3.1
+  \item konektor typu A -- na počítači, na HUBu
+  \item konektor typu B -- na tiskárně, mini B, micro B
+  \item konektor typu C -- oboustranný, symetrický, USB 3.1
 \end{itemize}
 
-
-%%TODO
 \subsection{Rychlosti}
 
 \begin{tabular}{ll}
-  USB 1.1 low speed 1,5~Mb/s & \rdelim\}{3}{1mm}[\hspace{2mm} half duplex] \\
-  \hspace{17mm}full speed 12~Mb/s  \\
-  USB 2.0 - high speed - 480~Mb/s
+  USB 1.1 -- low speed 1,5~Mb/s & \rdelim\}{3}{1mm}[\hspace{2mm} half duplex] \\
+  \hspace{16mm}-- full speed 12~Mb/s  \\
+  USB 2.0 -- high speed - 480~Mb/s
 \end{tabular}
 \begin{itemize}
   \tightlist
-  \item USB 3.0, 3.1 - superspeed - 5~Gb/s, 10~Gb/s \} full duplex
+  \item USB 3.0, 3.1 -- superspeed - 5~Gb/s, 10~Gb/s \} full duplex
   \begin{itemize}
     \tightlist
     \item verze jsou kompatibilní mezi sebou
-    \item při zapojení pomalejší do rychlejší se komunikuje s nižší rychlostí pouze mezi prvky s nízkou rychlostí = nespomalí celek
+    \item při zapojení pomalejší do rychlejší se komunikuje s nižší rychlostí
+    pouze mezi prvky s nízkou rychlostí -- nezpomalí celek
   \end{itemize}
 \end{itemize}
 
@@ -1682,7 +1684,7 @@ stejný kód jako disk
   \item deska obsahuje konektory a sloty (konektory pro karty)
 \end{itemize}
 
-%%Obrázek blokového schéma CPU
+\includegraphics{ref/blokove-schema-zakladni-desky.png}
 
 \subsection{Chipset}
 
@@ -1698,7 +1700,7 @@ stejný kód jako disk
   \item sada vzájemně spolupracujících čipů
   \item řídí činnost základní desky
   \item výrazně ovlivňuje výkon počítače
-  \item podporuje konkrétní socket pro CPU a typ RAM
+  \item podporuje konkrétní socket pro CPU a~typ RAM
   \item může obsahovat integrované karty
 \end{itemize}
 
@@ -1711,7 +1713,7 @@ stejný kód jako disk
 \subsection{Jižní můstek}
 
 \begin{itemize}
-  \item komunikuje s perifériemi, pomalejšími zařízeními
+  \item zařizuje komunikaci s~periferiemi, pomalejšími zařízeními
 \end{itemize}
 
 \subsection{Clock generator}
@@ -1726,7 +1728,7 @@ stejný kód jako disk
   \tightlist
   \item odměřuje časové zpoždění
   \item vytváří zpoždění
-  \item dočítá když se něco opakuje
+  \item počítá když se něco opakuje
 \end{itemize}
   
 \subsection{PCI}
@@ -1736,11 +1738,295 @@ stejný kód jako disk
   \item super IO čip -- myš, klávesnice
 \end{itemize}
 
-%%schéma procesoru s jedním čipem
+\includegraphics{ref/blokove-schema-procesoru-s-jednim-cipem.png}
 
 \begin{itemize}
   \tightlist
-  \item dříve řadič v severním můstku a když chtěl CPU komunikovat s pamětí musel jít přes severní můstek = pomalejší
-  \item paměť modulů může být až 6
+  \item dříve byl řadič paměti v~severním můstku -- to bylo pomalejší než toto řešení
+  \item paměťových modulů může být až 6
 \end{itemize}
+
+\subsection{Typy základních desek}
+
+\begin{itemize}
+  \tightlist
+  \item odvíjí se podle zdrojů: AT, ATX, IT, ITX
+  \item zdroje AT: desky AT, ATX
+  \item dnes se AT zdroje nepoužívají, nebylo možné vypnout počítač softwarově
+  \item zdroje ATX, desky ATX
+  \begin{itemize}
+    \tightlist
+    \item 24~pin konektor napájení
+    \item umožňuje softwarové vypnutí PC
+    \item umožňuje jiné způsovy zapnutí PC, když je ve standby režimu (soft-off)
+  \end{itemize}
+\end{itemize}
+
+\subsection{BIOS}
+
+\begin{itemize}
+  \tightlist
+  \item basic input and output system
+  \item program dodávaný výrobcem
+  \item je automaticky spuštěn deskou při spuštění počítače
+  \item umožňuje komunikaci mezi SW a HW
+  \item načte konfiguraci z~CMOS paměti
+  \item provede POST -- power on self test
+  \item dá povel ke spuštění operačního systému
+  \item součástí BIOSu je program ``setup''
+  \begin{itemize}
+    \tightlist
+    \item tam se porvádí konfigurace CPU, RAM, HDD, bootovací sekvence
+    \item obsahuje HW monitor -- teplota, RPM větráku
+  \end{itemize}
+  \item původně byl BIOS v ROM
+  \begin{itemize}
+    \tightlist
+    \item dnes v EEPROM nebo ve Flash ROM paměti -- umožňuje aktualizaci
+  \end{itemize}
+  \item dual BIOS -- jedna část se při aktualizaci neaktualizuje
+\end{itemize}
+
+\textbf{UEFI}
+
+\begin{itemize}
+  \tightlist
+  \item nový standard
+  \item 3D BIOS (3D mód) -- iteraktivní grafické prostředí, ovládání myší
+\end{itemize}
+
+\begin{itemize}
+  \tightlist
+  \item BIOS má 3~vrstvy
+  \begin{enumerate}
+    \item detekce pamětí, zařízení
+    \item CMOS paměť -- nevolatilní
+    \item ovladače -- integrované, na kartách, v~paměti
+  \end{enumerate}
+\end{itemize}
+
+\subsubsection{Start počítače}
+
+\begin{enumerate}
+  \tightlist
+  \item stisknu tlačítko
+  \item PSU vyšle signál -- samé jedničky
+  \item deska signál vrátí zpátky
+  \item systémem začne proudit elektrický proud
+  \item časovač-čítač počle CPU resetovací příkaz -- adresa registru se nastaví na FFF0
+  \item BIOS zkontroluje sám sebe, data v CMOS paměti
+  \item začne probíhat POST; má 3~fáze:
+
+  \circled{1}
+
+  \begin{enumerate}[label=\arabic*)]
+    \tightlist
+    \item testuje se CPU a~jeho jednotlivé části -- registry, řadič
+    \item testuje se prvních 64~kB paměti
+    \item testuje se přechod z~real módu do protected módu
+    \item testuje se paměť do 1~MB
+    \item testuje se paměť nad 1~MB až do chyby (dnes se netestuje, protože
+    paměti jsou spolehlivé a~příliš velké na testování)
+  \end{enumerate}
+
+  \circled{2}
+
+  \begin{enumerate}[label=\arabic*)]
+    \tightlist
+    \item testuje se GPU podle vlastního BIOSu
+    \item zkontroluje se připojení obrazovky
+    \item rozsvítí se obrazovka
+    \item testují se periferie
+    \item nastavují se I/O adresy a~přerušení periferií
+    \item testuje se DMA
+  \end{enumerate}
+
+  \circled{3}
+
+  \begin{enumerate}[label=\arabic*)]
+    \tightlist
+    \item testování zavaděče operačního systému (najde se nultý sektor disku, na
+    němž je program pro zavaděč konkrétního OS)
+    \item zkusí se zavedení OS
+    \item zavede se OS
+  \end{enumerate}
+\end{enumerate}
+
+\textbf{Studený start}: proběhne celý POST
+
+\textbf{Teplý start}: nastane-li nějaká chyba, vynechají se některé testy (př. periferie)
+
+OBRÁZEK resetu
+
+\begin{itemize}
+  \tightlist
+  \item reset vytváří zpoždění od naběhnutí do napětí, aby se mohly sekvenční
+  obvody vybít
+  \item drží-li se tlačítko déle než 5~s, reset končí
+  \item reset nuluje všechny hodnoty kromě operační paměti
+\end{itemize}
+
+\section{Monitory}
+
+\begin{itemize}
+  \tightlist
+  \item výstupní zařízení
+  \item funkce zobrazování informací
+  \item připojen na grafickou kartu
+  \item digitální nebo analogový signál
+  \item parametry:
+  \begin{itemize}
+    \tightlist
+    \item úhlopříčka (vzdálenost rohových bodů) -- v~palcích
+    \item poměr stran -- 4:3, 16:9, 21:9
+    \item rozlišení -- v~bodech (u~LED -- počet skutečných bodů, u~CRT -- počet
+    možných bodů)
+    \item obnovovací frekvence -- v~Hz; běžně 60~Hz
+    \item odezva -- v~ms; říká jak dlouho trvá bodům než se rozsvítí nebo zhasne
+    pixel
+    \item rozteč bodů -- při menší rozteči pixely splývají
+    \item vstupy -- VGA, DVI (analogový DVI-A, digitální DVI-D, kombinovaný DVI-I),
+    HDMI, Display Port -- nejkvalitnější
+  \end{itemize}
+\end{itemize}
+
+\subsection{CRT}
+
+\begin{itemize}
+  \tightlist
+  \item složení:
+  \begin{itemize}
+    \tightlist
+    \item vakuová baňka
+    \item elektronové dělo v~zadní části baňky; dříve tři děla, dnes jedno dělo
+    se třemi katodami emitující elektrony
+    \item tři, případně čtyři cívky usměrňující proud elektronů
+    \item stínítko (maska) -- zajišťuje, že na určitou barvu luminoforu dopadne
+    pouze odpovídající paprsek
+    \item přední vrstva je pokryta luminoforem, ten mění elektrický výboj na
+    viditelné světlo
+    \includegraphics[width=7cm]{ref/schema-crt-obrazovky.png}
+  \end{itemize}
+  \item masky:
+  \begin{itemize}
+    \tightlist
+    \item trinitron -- pruhy
+    \item delta -- tečky
+  \end{itemize}
+  \item klady:
+  \begin{itemize}
+    \tightlist
+    \item vysoký kontrastní poměr
+    \item perfektní stupně šedi
+    \item perfektní černá
+    \item žádná jasová, saturační deformace
+    \item výborné zobrazovací úhly
+  \end{itemize}
+  \item zápory:
+  \begin{itemize}
+    \tightlist
+    \item velká velikost, velká hmotnost
+    \item velké geometrické zkreslení -- vypouklá obrazovka
+    \item efekt moaré (moiré) -- vzniká překrýváním dvou pravidelných rastrů
+  \end{itemize}
+\end{itemize}
+
+\subsection{LCD}
+
+\begin{itemize}
+  \tightlist
+  \item liquid crystal display
+  \includegraphics{ref/lcd.png}
+  \item monitor pracuje na principu propouštění a~blokování světla
+  \item zdrojem světla je výbojka nebo LED dioda -- nižší spotřeba energie
+  \item zdrojem světla může být i~zrcadlo -- v~kalkulačkách
+  \item osy polarizace jsou na sebe kolmé -- světlo z~prvního filtru neprojde
+  druhým, když je zavřený
+  \item \textbf{druhý polarizační filtr}
+  \begin{itemize}
+    \tightlist
+    \item je tvořený tekutými krystaly
+    \item bez napětí jsou krystaly chaoticky uspořádány
+    \item s~napětím se natáčí v~jednom směru
+  \end{itemize}
+
+  \item Rozdělení podle typu matice:
+  \begin{itemize}
+    \tightlist
+    \item \textbf{pasivní matice}
+    \begin{itemize}
+      \tightlist
+      \item na jedné straně skla jsou svislé vodiče
+      \item na druhé straně skla jsou vodorovné vodiče
+      \item vznikají přelechy -- vybudí se ostatní pixely
+      \item pasivní matice používají technologii STN (super-twisted nematic)
+    \end{itemize}
+    \item \textbf{aktivní matice}
+    \begin{itemize}
+      \tightlist
+      \item používají technologii TFT (Thin-Film Transistors) -- transparentní tranzistory
+      \item na jedné straně jsou tranzistory, na druhé straně jsou kolektory
+    \end{itemize}
+  \end{itemize}
+
+  \item Způsob otočení krystalů lze dělit na:
+  \begin{itemize}
+    \tightlist
+    \item twist -- otočení krystalu pouze o~90°; menší škála jasu
+    \item super twist -- otočení krystalu až o~270°; větší škála jasu
+  \end{itemize}
+
+  \item výhody:
+  \begin{itemize}
+    \tightlist
+    \item malé displeje, monitory tak jsou mnohem menší než CRT
+    \item malá energetická spotřeba
+    \item žádné geometrické zkreslení, protože obrazovka je plochá
+  \end{itemize}
+
+  \item nevýhody:
+  \begin{itemize}
+    \tightlist
+    \item omezené pozorovací úhly
+    \item zkreslení podsvícení u~okrajů
+    \item malý kontrastní poměr
+    \item mrtvé pixely
+  \end{itemize}
+
+\end{itemize}
+
+\subsection{Plazmová obrazovka}
+
+\begin{itemize}
+  \tightlist
+  \item dvě velké sklenění desky
+  \item mezi nimi malé komůrky s~elektrodami
+  \item komůrky jsou naplněny vzácným plynem (argon, neon, xeon) a~výpary rtuti
+  \item výbojem z~elektrod se plyn ionizuje -- elektrony se přesouvají
+  z~valenční vrstvy do excitovaného stavu a~tím emitují UV fotony
+  \item tyto UV fotony dopadají na luminofor, který pohltí záření a~vysvítí ho
+  jako viditelné světlo
+
+  \item výhody:
+  \begin{itemize}
+    \tightlist
+    \item vysoký kontrastní poměr
+    \item výborné zobrazení černé barvy
+    \item vynikající pozorovací úhly
+    \item nízká doba odezvy
+  \end{itemize}
+
+  \item nevýhody:
+  \begin{itemize}
+    \tightlist
+    \item velká velikost pixelů
+    \item ve srovnání s~LCD velká energetická náročnost
+    \item malé úhlopříčky
+    \item vysoká produkce tepla
+    \item statický obraz způsobuje ``vypálení'' pixelů
+  \end{itemize}
+
+  \item plazmové obrazovky se již nevyrábí, nahradily je LED a~OLED
+\end{itemize}
+
 \end{document}
