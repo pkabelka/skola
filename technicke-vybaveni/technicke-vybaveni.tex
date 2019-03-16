@@ -38,7 +38,7 @@
 
 \begin{itemize}
   \tightlist
-  \item instrukce = pokyn k vykonání nějaké činnosti
+  \item instrukce = pokyn k~vykonání nějaké činnosti
   \item instrukční sada = strojový kód
   \item překladače: kompilátory, interpretery
   \item instrukce: aritmetické, logické, řídící
@@ -48,31 +48,31 @@
   \item[] \includegraphics[width=16cm]{ref/blokove-schema-procesoru.png}
   \newpage
   \item SWR -- registr stavového slova = stavy ALU
-  \item ALU -- provádí aritmetické a logické operace
-  \item TEMP -- je v něm vždy obsažen operand, zajišťuje konstantní vstupy
+  \item ALU -- provádí aritmetické a~logické operace
+  \item TEMP -- je v~něm vždy obsažen operand, zajišťuje konstantní vstupy
   během výpočtu
   \item ACCUMULATOR
   
   \begin{itemize}
     \tightlist
-    \item střádač -- většinou u menších procesorů
+    \item střádač -- většinou u~menších procesorů
     \item slouží jako implicitní operand
-    \item ukládá se do něj výsledek z ALU
-    \item při instrukci ``přičti adresu'' - přičítá k ACC
+    \item ukládá se do něj výsledek z~ALU
+    \item při instrukci ``přičti adresu'' -- přičítá k~ACC
   \end{itemize}
   \item SBĚRNICE -- skupina vodičů se stejným protokolem
   \item DB -- data bus -- datová sběrnice -- umožňuje výměnu dat
   \item FIFO -- fronta instrukcí
   \item DEKODÉR -- rozkládá instrukce na mikroinstrukce
-  \item ŘADIČ -- stará se o řídící sběrnice
+  \item ŘADIČ -- stará se o~řídící sběrnice
   \item GPR -- general purpose register -- víceúčelové registry
   \item CS -- code segment
   \item SS -- stack segment
   \item CD -- data segment
   \item ES -- extra segment
   \item FS -- free segment
-  \item IP -- instruction pointer -- ukazatel instrukce, která se provede v
-  následujícím kroku
+  \item IP -- instruction pointer -- ukazatel instrukce, která se provede
+  v~následujícím kroku
   \item SP -- stack pointer -- ukazatel zásobníku
   \item AB -- address bus -- adresová sběrnice
   \item výpočet adresy instrukce:
@@ -93,15 +93,15 @@
   
     \begin{itemize}
     \tightlist
-    \item vezme se obsah těchto registrů (program counter nebo IP), najde se v
-    paměti adresa a vezme se instrukce z buňky v paměti
-    \item po provedení instrukce se zvedne IP nebo program counter a jednotku
+    \item vezme se obsah těchto registrů (program counter nebo IP), najde se
+    v~paměti adresa a~vezme se instrukce z~buňky v~paměti
+    \item po provedení instrukce se zvedne IP nebo program counter a~jednotku
     instrukce
     \end{itemize}
   \item do stracku se zapisují adresy ze stack pointeru, které se neprovedly
     př.: kvůli přerušení
   \item vždy se zapisuje na vrchol stacku
-  \item při zápisu se změnšuje pointer o jednotku instrukce
+  \item při zápisu se změnšuje pointer o~jednotku instrukce
   \item dno stacku se vytváří př.: zavedením programu do operační paměti
   \item každý program má svůj stack
   \item dno stacku je nejvyšší adresa
@@ -151,15 +151,15 @@
 
 \begin{itemize}
 \tightlist
-\item aby mohl program začít, musí být první instrukce v IP nastavena na
-  adresu z CB
+\item aby mohl program začít, musí být první instrukce v~IP nastavena na
+  adresu z~CB
 \end{itemize}
 
 \subsection{Přerušení}
 
 \begin{itemize}
 \tightlist
-\item je to schopnost procesoru přerušit vykonávaný program a začít
+\item je to schopnost procesoru přerušit vykonávaný program a~začít
   obsluhovat jiný
 \item typy přerušení:
 
@@ -185,10 +185,10 @@
   \tightlist
   \item signál přijímá řadič přerušení (interrupt controller)
   \item IC vyhodnocuje prioritu přerušení
-  \item procesor dokončí právě prováděnou instrukci a následující instrukci
+  \item procesor dokončí právě prováděnou instrukci a~následující instrukci
     uloží do stacku
   \item procesor si od řadiče vezme číslo přerušení
-  \item procesoru v tabulce vektorů přerušení, hledá vektor přerušení --
+  \item procesoru v~tabulce vektorů přerušení, hledá vektor přerušení --
     virtuální adresa první adresy přerušení
   \end{itemize}
 \end{itemize}
@@ -201,7 +201,7 @@
 
   \begin{itemize}
   \tightlist
-  \item procesor naprogramuje DMA (probíhá v µs)
+  \item procesor naprogramuje DMA (probíhá v~µs)
   \item DMA vyšle HOLD
   \item CPU potvrdí pomocí HOLD A (accepted)
   \end{itemize}
@@ -218,9 +218,9 @@
 
   \begin{itemize}
   \tightlist
-  \item 2 instrukce pro práci s pamětí: LOAD, STORE
+  \item 2~instrukce pro práci s~pamětí: LOAD, STORE
   \end{itemize}
-\item program v assembleru bývá delší
+\item program v~assembleru bývá delší
 \item co takt, to instrukce
 \item je nutný pipelining
 \item tento typ procesoru nemá pevný accumulator
@@ -239,7 +239,7 @@
   \tightlist
   \item rozloží se na mikroinstrukce -- ty se překládají do strojového kódu
   \end{itemize}
-\item dnešní procesory se navenek jeví jako CISC, v jádře fungují jako
+\item dnešní procesory se navenek jeví jako CISC, v~jádře fungují jako
   RISCové procesory
 \end{itemize}
 
@@ -247,19 +247,19 @@
 
 \begin{itemize}
 \tightlist
-\item frekvence je udávána v Hz, frekvence = počet instrukcí provedených za
+\item frekvence je udávána v~Hz, frekvence = počet instrukcí provedených za
   sekundu
 \item efektivita mikrokódu -- počet kroků potřebných pro dokončení instrukce
-\item numerický koprocesor -- FPU -- výpočty v pohyblivé čárce
+\item numerický koprocesor -- FPU -- výpočty v~pohyblivé čárce
 \item počet instrukčních kanálů -- pipelining
 
   \begin{itemize}
   \tightlist
-  \item počet instrukcí, které se zpracují v jednom taktu
+  \item počet instrukcí, které se zpracují v~jednom taktu
   \end{itemize}
 \item šířka slova -- maximální počet bitů, které je procesor schopen
   zpracovat během jedné operace
-\item šířka přenosu dat -- počet bitů přenášených z procesoru nebo do
+\item šířka přenosu dat -- počet bitů přenášených z~procesoru nebo do
   procesoru
 \item CACHE -- vyrovnávací paměť
 \item velikost adresovatelné paměti
@@ -268,7 +268,7 @@
 
   \begin{itemize}
   \tightlist
-  \item pasivní -- žebrovaný chladič vyrobený z materiálu, který velmi dobře
+  \item pasivní -- žebrovaný chladič vyrobený z~materiálu, který velmi dobře
     odvádí teplo
   \item aktivní -- větráček
   \item kombinovaný -- nejčastější
@@ -319,7 +319,7 @@
 \tightlist
 \item jeden ze způsobů jak zvýšit výkon procesoru, př.: více ALU, FPU
 \item navenek se jeví jako jeden procesor
-\item v jednom taktu zpracuje více informací následujících za sebou
+\item v~jednom taktu zpracuje více informací následujících za sebou
 \end{itemize}
 
 \subsubsection{Vícejádrové procesory}
@@ -337,9 +337,9 @@
 \item OS musí podporovat vlákna
 \item procesy mají oddělený adresový prostor
 \item vlákna mají společný adresový prostor
-\item jádra mají svoji cache a mají také společnou cache
-\item jádra a cache jsou prpojené crossbarovými sběrnicemi
-\item každé jádro má řadič přerušení a řídí si přerušení
+\item jádra mají svoji cache a~mají také společnou cache
+\item jádra a~cache jsou prpojené crossbarovými sběrnicemi
+\item každé jádro má řadič přerušení a~řídí si přerušení
 \item volné jádro může obsloužit přerušení zaneprázdněného jádra
 \end{itemize}
 
@@ -348,9 +348,9 @@
 \begin{itemize}
 \tightlist
 \item jeden fyzický procesor se navenek jeví jako dva logické procesory
-\item jsou duplikovány regisry a řadič přerušení
+\item jsou duplikovány regisry a~řadič přerušení
 \item procesor na vstupu přijme dvě vlákna za předpokladu, že každé vlákno
-  potřebuje jinou výkonnou jednotku, v jiném případě jedno vlákno čeká
+  potřebuje jinou výkonnou jednotku, v~jiném případě jedno vlákno čeká
   na zpracování
 \item technologie používaná Intelem
 \end{itemize}
@@ -361,7 +361,7 @@
 \tightlist
 \item obousměrná (full duplex)
 \item umožňuje vysokou propustnost
-\item propojuje procesor k severnímu mostu
+\item propojuje procesor k~severnímu mostu
 \end{itemize}
 
 \subsubsection{Multithreading}
@@ -375,7 +375,7 @@
 
 \begin{itemize}
 \tightlist
-\item centrálně řízený systém s více procesory se společnou pamětí
+\item centrálně řízený systém s~více procesory se společnou pamětí
 \item procesory jsou soustředěny kolem jedné sběrnice
 \item vhodné pro řešení jedné úlohy
 \item řízení zařizuje jeden operační systém
@@ -405,7 +405,7 @@
 \tightlist
 \item kontaktní, bezkontaktní klávesy
 \item klávesnice rozvržena do matice
-\item mechanické, membránové (halové a kapacitní)
+\item mechanické, membránové (halové a~kapacitní)
 \item fungování klávesnice -- SCAN kódy
 
   \begin{itemize}
@@ -420,19 +420,19 @@
 
 \begin{itemize}
 \tightlist
-\item 2 snímače navzájem posunuty o $\frac{\pi}{2}$ = 90°
+\item 2~snímače navzájem posunuty o~$\frac{\pi}{2}$ = 90°
 \item na hřídelce je clonkové kolečko
 \item světelný paprsek dopadá na senzor podle toho zda prosvítá
 \end{itemize}
 
-\subsection{DSP -- Digital Signal
-Processor}
+\subsection{DSP -- Digital Signal Processor}
 
 \begin{itemize}
 \tightlist
-\item používá se u optických myší
-\item snímky z povrchu se ukládají v CMOS myši a podle rozdílů v obrazech se
-  vypočítá směr a vzdálenost pohybu
+\item používá se u~optických myší
+\item snímky povrchu snímá CMOS snímač, ty posílá do DSP kde podle rozdílů ve
+snímcích vypočítá směr a~vzdálenost pohybu
+\item CMOS snímač zaznamenává tisíce snímků za sekundu
 \end{itemize}
 
 \subsection{Joystick}
@@ -443,21 +443,21 @@ Processor}
 \item digitální nebo analogový
 \item použití: hry, průmyslová zařízení, letadla
 \item dříve se připojoval přes gameport, nyní USB
-\item má dvě osy -- \emph{x}, \emph{y} (případně i osu \emph{z} pro
+\item má dvě osy -- \emph{x}, \emph{y} (případně i~osu \emph{z} pro
   naklánění)
 \end{itemize}
 
-\section{Virtualizace RAM v PC, stránkování, swapování, výpočet adres v protected módu}
+\section{Virtualizace RAM v~PC, stránkování, swapování,\\výpočet adres v~protected módu}
 
 \begin{itemize}
 \tightlist
-\item každý počítač startuje v real módu
-\item real mód má velikost paměti do 1MB
-\item adresová sběrnice má 20 bitů
-\item registry jsou 16 bitové
+\item každý počítač startuje v~real módu
+\item real mód má velikost paměti do~1MB
+\item adresová sběrnice má 20~bitů
+\item registry jsou 16~bitové
 \item segment + offset = fyzická adresa
 \item CS + IP = fyzická adresa
-\item CS * 16 + IP = fyzická adresa instrukce v real módu
+\item CS * 16 + IP = fyzická adresa instrukce v~real módu
 \item př.: segment 020A; offset 1BCD
 
   \begin{itemize}
@@ -466,12 +466,13 @@ Processor}
   \end{itemize}
 \end{itemize}
 
-\subsection{Výpočet adresy v protected módu}
+\subsection{Výpočet adresy v~protected módu}
 
 \begin{itemize}
 \tightlist
-\item protected mód = chráněný režem -- chrání pamět programů proti zápisu z
-  jiných programů
+\item nazývá se segmentace
+\item protected mód = chráněný režem -- chrání pamět programů proti zápisu
+z~jiných programů
 \item zapisuje do paměti nad 1~MB
 \item[] \includegraphics[width=13.651cm]{ref/vypocet-logicke-adresy.png}
 \item logická adresa = selector + offset
@@ -492,7 +493,7 @@ rezerva & & 2~B \\ \hline
 \item báze -- počáteční adresa segmentu
 \item limit -- velikost segmentu, musí být menší než offset
 \item práva -- archivní, systémové, obyčejný uživatel
-\item rezerva -- pro \emph{bázi} a \emph{limit}
+\item rezerva -- pro \emph{bázi} a~\emph{limit}
 \end{itemize}
 
 \subsection{GDT/LDT}
@@ -509,7 +510,7 @@ rezerva & & 2~B \\ \hline
 
   \begin{itemize}
   \tightlist
-  \item adresy jsou v GDT
+  \item adresy jsou v~GDT
   \end{itemize}
 \item tabulky deskriptorů (popisovačů)
 
@@ -518,7 +519,7 @@ rezerva & & 2~B \\ \hline
   \item popisují systém uložení
   \end{itemize}
 \item segment = tabulka
-\item každý segment má 8 řádků (celkem 64~kB)
+\item každý segment má 8~řádků (celkem 64~kB)
 \item práva -- archivní, systémové, obyčejný uživatel
 \end{itemize}
 
@@ -543,8 +544,8 @@ rezerva & & 2~B \\ \hline
 
 \begin{itemize}
 \tightlist
-\item operační paměť je někdy příliš malá pro programy, proto se rozšiřuje o
-  virtuální paměť
+\item operační paměť je někdy příliš malá pro programy, proto se rozšiřuje
+o~virtuální paměť
 \item ukládají se zde momentálně nepotřebné stránky
 \item uplatňuje se při swapování
 \item swapovací prostor rozšiřuje operační paměť
@@ -559,13 +560,13 @@ rezerva & & 2~B \\ \hline
 
   \begin{itemize}
   \tightlist
-  \item najde v operační paměti stránky, které nebudou potřeba, najde volný
-    frame a zapíše je na disk
-  \item číslo framu se přepíše číslem stránky a přidá se flag o tom kde se
+  \item najde v~operační paměti stránky, které nebudou potřeba, najde volný
+    frame a~zapíše je na disk
+  \item číslo framu se přepíše číslem stránky a~přidá se flag o~tom kde se
     nachází (swap nebo RAM)
   \end{itemize}
 \item swapování je odkládání momentálně nepotřebných dat do virtuální paměti
-  a vracení dat do operační paměti v momentě kdy jsou data potřeba
+  a~vracení dat do operační paměti v~momentě kdy jsou data potřeba
 \item swapovací prostor by měl být dvojnásobně větší jak operační paměť
 \item při swapování nastává zpoždění, proces swapování je velmi pomalý
 \end{itemize}
@@ -577,7 +578,7 @@ rezerva & & 2~B \\ \hline
 \begin{itemize}
 \tightlist
 \item používají se tam, kde se používají řídící systémy
-\item jsou založeny na základě 2 zásobníků
+\item jsou založeny na základě 2~zásobníků
 
   \begin{itemize}
   \tightlist
@@ -585,17 +586,17 @@ rezerva & & 2~B \\ \hline
   \item zásobník návratových adres
   \end{itemize}
 \item zásobník je na principu LIFO
-\item jsou jednodušší než procesory CISC a RISC
+\item jsou jednodušší než procesory CISC a~RISC
 \item mají kratší instrukční sadu
 \item mají dvou stupňový pipelining
 \item chybí fáze dekódování
-\item operandy jsou v prvních 2 položkách zásobníku
-\item ALU má v každý okamžik operandy ke zpracování
+\item operandy jsou v~prvních 2~položkách zásobníku
+\item ALU má v~každý okamžik operandy ke zpracování
 \item zásobníkové procesory nezahazují instrukce
-\item na přerušení reagují se zpožděním pouze 1 strojového cyklu
+\item na přerušení reagují se zpožděním pouze 1~strojového cyklu
 \item ALU má šířku operandů 20 bitů
-\item jedno instrukční slovo: max 4 instrukce
-\item šířka jedné instrukce je 5 bitů
+\item jedno instrukční slovo: max 4~instrukce
+\item šířka jedné instrukce je 5~bitů
 \item nemá cache
 \item počet instrukcí: $2^{32}$
 \end{itemize}
@@ -607,12 +608,12 @@ rezerva & & 2~B \\ \hline
 \item[] \includegraphics[width=13.704cm]{ref/mody.png}
 \item long, legacy
 \item existuje přepínání mezi módy
-\item počítač startuje v \emph{reálném režimu}
+\item počítač startuje v~\emph{reálném režimu}
 \item \emph{virtuální mód} se dnes nepoužívá
 
   \begin{itemize}
   \tightlist
-  \item umožňuje spouštět programy určeny pro reálný režim s výhodami
+  \item umožňuje spouštět programy určeny pro reálný režim s~výhodami
     chráněného režimu
   \end{itemize}
 \item system management mód
@@ -627,21 +628,21 @@ rezerva & & 2~B \\ \hline
 
   \begin{itemize}
     \tightlist
-  \item 64 bit mód
+  \item 64~bit mód
 
     \begin{itemize}
     \tightlist
     \item je určený pro 64 bitové procesory
-    \item má 64 bitové registry a instruction pointer
+    \item má 64 bitové registry a~instruction pointer
     \item flat segmentustránkování
     \end{itemize}
   \item režim kompatibility
 
     \begin{itemize}
     \tightlist
-    \item je kompatibilní s 16 bit a 32 bit procesory -- je možné spouštěť
+    \item je kompatibilní s~16 bit a~32 bit procesory -- je možné spouštěť
       programy navržené pro tyto procesory
-    \item neobsazené bity jsou vyplněny 1 případně 0
+    \item neobsazené bity jsou vyplněny 1~případně 0
     \end{itemize}
   \end{itemize}
 \item legacy mód
@@ -649,8 +650,8 @@ rezerva & & 2~B \\ \hline
   \begin{itemize}
   \tightlist
   \item nemají všechny procesory (AMD ano, Intel ne)
-  \item pracuje jako opravdový 32 bitový procesor (s kompatibilitou pro 16
-    bit procesory)
+  \item pracuje jako opravdový 32 bitový procesor (s kompatibilitou pro 16~bit
+  procesory)
   \item registry nepřetěžuje zbytečnými bity doplňující do 64~b
   \end{itemize}
 \end{itemize}
@@ -661,16 +662,16 @@ rezerva & & 2~B \\ \hline
 \tightlist
 \item long mód inplementuje ``flat model''
 \item flat model představuje jeden segment (původně přes celou paměť)
-\item u 32~bit do 1~MB
-\item rozeznáváme 4 druhy adres
+\item u~32~bit do 1~MB
+\item rozeznáváme 4~druhy adres
 
   \begin{itemize}
     \tightlist
   \item \emph{logická} -- báze, vstupní adresa pro výpočet
   \item \emph{efektivní adresa} -- offset
   \item \emph{lineární adresa} = báze + offset
-  \item u flat modelu je počáteční adresa segmentu rovna 0 tzn. že lineární
-    adresa je shodná s efektivní adresou proto se udává v kanonickém
+  \item u~flat modelu je počáteční adresa segmentu rovna 0~tzn. že lineární
+    adresa je shodná s~efektivní adresou proto se udává v~kanonickém
     tvaru
   \item kanonická forma adresy
 
@@ -724,7 +725,7 @@ rezerva & & 2~B \\ \hline
 
 \begin{itemize}
 \tightlist
-\item uchování a přístup k datům je závislý na napájení
+\item uchování a~přístup k~datům je závislý na napájení
 \item př.: polovodičové paměti
 \end{itemize}
 
@@ -732,7 +733,7 @@ rezerva & & 2~B \\ \hline
 
 \begin{itemize}
 \tightlist
-\item nepotřebují k uchování dat napájení, pouze k přístupu
+\item nepotřebují k~uchování dat napájení, pouze k~přístupu
 \end{itemize}
 
 \subsection{Podle přístupu do paměti}
@@ -741,7 +742,7 @@ rezerva & & 2~B \\ \hline
 
 \begin{itemize}
 \tightlist
-\item paměti s náhodným přístupem
+\item paměti s~náhodným přístupem
 \item přístup není závislý na adrese umístění
 \item polovodičová paměť
 \end{itemize}
@@ -750,12 +751,12 @@ rezerva & & 2~B \\ \hline
 
 \begin{itemize}
 \tightlist
-\item pro čtení a zápis
+\item pro čtení a~zápis
 \item ROM -- pouze pro čtení
 
   \begin{itemize}
   \tightlist
-  \item zápis se provede při výrobním procesu a je neměnný
+  \item zápis se provede při výrobním procesu a~je neměnný
   \end{itemize}
 \item write-only memory -- př.: černá skříňka
 \end{itemize}
@@ -764,7 +765,7 @@ rezerva & & 2~B \\ \hline
 
 \begin{itemize}
 \tightlist
-\item k práci potřebují procesor
+\item k~práci potřebují procesor
 \item cache, registry, CMOS
 \end{itemize}
 
@@ -772,7 +773,7 @@ rezerva & & 2~B \\ \hline
 
 \begin{itemize}
 \tightlist
-\item slouží k trvalému uchování dat
+\item slouží k~trvalému uchování dat
 \item HDD, CD, DVD, diskety, kazety, paměťové karty
 \end{itemize}
 
@@ -780,15 +781,15 @@ rezerva & & 2~B \\ \hline
 
 \begin{itemize}
 \tightlist
-\item u destruktivních pamětí se informace po přečtení zmizí a je potřeba ji
+\item u~destruktivních pamětí se informace po přečtení zmizí a~je potřeba ji
   znovu zapsat
-\item u nedestruktivních pamětí zůstávají data po přečtení bez změny
-\item polovodičová paměť se skládá z buněk
+\item u~nedestruktivních pamětí zůstávají data po přečtení bez změny
+\item polovodičová paměť se skládá z~buněk
 \item paměťová banka je zastávána integrovaným obvodem
-\item každá buňka může mít hodnotu 1 nebo 0
+\item každá buňka může mít hodnotu 1~nebo~0
 \item paměťové buňky jsou uspořádány do matice (tvoří mřížku)
-\item poloha buňky je určena řádkovým a sloupcovým vodičem
-\item paměťový řadič řídí čtení a zápis
+\item poloha buňky je určena řádkovým a~sloupcovým vodičem
+\item paměťový řadič řídí čtení a~zápis
 
   \begin{itemize}
   \tightlist
@@ -805,7 +806,7 @@ rezerva & & 2~B \\ \hline
 
 \begin{itemize}
 \tightlist
-\item uchovávají informace po celou dobu kdy jsou připojeny k napájení
+\item uchovávají informace po celou dobu kdy jsou připojeny k~napájení
 \item přístupová doba 1~ns -- 20~ns
 \item složitější, vyšší výrobní náklady než dynamické paměti
 \item je rychlejší
@@ -818,8 +819,8 @@ rezerva & & 2~B \\ \hline
 \begin{itemize}
 \tightlist
 \item informace je uložena jako elektrický náboj na kondenzátoru
-\item náboj se vybíjí i při připojeném napájení -- je nutný refresh
-\item v době refreshe není možné číst ani zapisovat
+\item náboj se vybíjí i~při připojeném napájení -- je nutný refresh
+\item v~době refreshe není možné číst ani zapisovat
 \item buňka má jednoduchou výrobu, nízké náklady na výrobu
 \item přístupová doba 10~ns -- 70~ns
 \item čtení je destruktivní -- informace musí být znovu zapsána po přečtení
@@ -836,7 +837,7 @@ rezerva & & 2~B \\ \hline
 
 \begin{itemize}
 \tightlist
-\item informace je zapsána při výrobě a nelze změnit
+\item informace je zapsána při výrobě a~nelze změnit
 \item př.: firmware
 \end{itemize}
 
@@ -870,7 +871,7 @@ rezerva & & 2~B \\ \hline
 \item elektricky programovatelná paměť
 \item paměť je organizována po blocích
 \item př.: firmware, vnější medium
-\item data bez napětí vydrží uchována \textasciitilde{}10 let
+\item data bez napětí vydrží uchována \textasciitilde{}10~let
 \end{itemize}
 
 \subsection{Dynamická paměť}
@@ -882,18 +883,18 @@ rezerva & & 2~B \\ \hline
 \begin{itemize}
 \tightlist
 \item řadič je propojen se vším
-\item když je adresa v bufferu, je možné načíst další adresu
+\item když je adresa v~bufferu, je možné načíst další adresu
 \item paměťových matic je několik
 
   \begin{itemize}
   \tightlist
   \item jsou společně ovládány
-  \item mají každá svůj vstup a výstup
+  \item mají každá svůj vstup a~výstup
   \item šířka datové sběrnice = počet matic
   \end{itemize}
-\item RW zesilovač -- dělá z elektrického signálu logický signál
+\item RW zesilovač -- dělá z~elektrického signálu logický signál
 \item paměť je destruktivní, proto je zde statická RAM -- do té se informace
-  při čtení uloží a následně se znovu zapíše
+  při čtení uloží a~následně se znovu zapíše
 \end{itemize}
 
 \subsubsection{Časový diagram paměti}
@@ -901,7 +902,7 @@ rezerva & & 2~B \\ \hline
 \begin{itemize}
 \tightlist
 \item[] \includegraphics[width=10cm]{ref/casovy-diagram-dynamicke-pameti.png}
-\item časování v nanosekundách 5 - 2 - 2 - 2
+\item časování v~nanosekundách 5~-~2~-~2~-~2
 \end{itemize}
 
 \subsubsection{Synchronní paměť EDO}
@@ -918,18 +919,18 @@ rezerva & & 2~B \\ \hline
   \begin{itemize}
   \tightlist
   \item výběr obvodu, který bude reagovat
-  \item negovaný z bezpečnosti, aby při přerušení vše zůstalo nefunkční
+  \item negovaný z~bezpečnosti, aby při přerušení vše zůstalo nefunkční
   \end{itemize}
 \item AB -- adresový sběrnice
 \item RAS -- row address or strobe -- říká, že signál na sběrnici je platný
-\item CAS - column address or strobe
-\item RW -- log. 1 říká, že data jsou platná + signál pro čtení, zápis
+\item CAS -- column address or strobe
+\item RW -- log. 1~říká, že data jsou platná + signál pro čtení, zápis
 \item paměť může být typu \emph{burst}
 
   \begin{itemize}
   \tightlist
-  \item může pracovat s více adresami -- ukládají se do mini cache
-  \item při opětovném čtení je již uloženo v mini cache -- tím se paměť
+  \item může pracovat s~více adresami -- ukládají se do mini cache
+  \item při opětovném čtení je již uloženo v~mini cache -- tím se paměť
     zrychluje
   \end{itemize}
 \end{itemize}
@@ -938,23 +939,23 @@ rezerva & & 2~B \\ \hline
 
 \begin{itemize}
 \tightlist
-\item v závislosti na změně proudu se mění magnetická indukce
+\item v~závislosti na změně proudu se mění magnetická indukce
 \item když se zmenšuje \emph{H} -- intenzita magnetického pole, zmenšuje se
-  i magnetická indukce
+  i~magnetická indukce
 
   \begin{itemize}
     \tightlist
   \item ne však do nuly, zastaví se na \emph{Br} -- magnetická remanence --
     zbytek magnetismu, který si materiál uchovává po konci působení
     magnetického pole
-  \item v \emph{Br} se změní směr proudu → \emph{H} se nebude zvětšovat →
+  \item v~\emph{Br} se změní směr proudu → \emph{H} se nebude zvětšovat →
     max \emph{Hc}
   \item Hc -- koercitivita (koercivita) udává magnetickou tvrdost
 
     \begin{itemize}
     \tightlist
-    \item hodnota nutná k odmagnetování materiálu
-    \item když budu dál zvětšovat → dojde k nasycení v opačném směru
+    \item hodnota nutná k~odmagnetování materiálu
+    \item když budu dál zvětšovat → dojde k~nasycení v~opačném směru
     \end{itemize}
   \end{itemize}
 \end{itemize}
@@ -964,32 +965,32 @@ rezerva & & 2~B \\ \hline
 \begin{itemize}
 \tightlist
 \item vnější paměť
-\item slouží k trvalému uchování dat
+\item slouží k~trvalému uchování dat
 \item velkokapacitní
 \item pohyblivá magnetická vrstva
 \item energeticky nezávislý (nevolatilní)
-\item HDD se skládá z ploten a hlav
-\item plotna může být kovová nebo skleněná, pevná a neohebná
+\item HDD se skládá z~ploten a~hlav
+\item plotna může být kovová nebo skleněná, pevná a~neohebná
 \item je pokryta tenkou vrstvou magneticky citlivého materiálu
 \item na magnetické vrstvě je vrstva maziva -- chrání proti mechanickému
   poškození
 \item průměr plotny 3.5" nebo 2.5"
 \item ploten může být více nad sebou
-\item hlava zajišťuje čtení a zápis
+\item hlava zajišťuje čtení a~zápis
 \item hlava pluje na vzduchovém polštáři nad plotnou
-\item na každou plotnu jsou dvě hlavy -- z obou stran jedna
+\item na každou plotnu jsou dvě hlavy -- z~obou stran jedna
 \item vystavovací mechanismus -- vystaví hlavu na správnou pozici
 
   \begin{itemize}
   \tightlist
-  \item 3 fáze: seek time, settle time, latence
+  \item 3~fáze: seek time, settle time, latence
   \item seek time -- nalezení pozice na disku, vystřelení hlavy
   \item settle time -- čekání na utlumení kmitání hlavy (v ms)
   \item latence -- vyčká se na pootočení disku
   \end{itemize}
 \item čím rychleji se disk točí, tím je latence nižší
-\item při čtení a zápisu prochází hlavou proud, který zmagnetizuje vrstvu
-\item každý disk obsahuje řadič -- řídí čtení a zápis
+\item při čtení a~zápisu prochází hlavou proud, který zmagnetizuje vrstvu
+\item každý disk obsahuje řadič -- řídí čtení a~zápis
 
   \begin{itemize}
   \tightlist
@@ -998,17 +999,17 @@ rezerva & & 2~B \\ \hline
   \end{itemize}
 \item konfigurační přepínače -- jumpery
 \item kontroluje rychlost otáčení
-\item CACHE -- k uložení dat před zápisem; když jsou data v CACHE, tak disk
+\item CACHE -- k~uložení dat před zápisem; když jsou data v~CACHE, tak disk
   hlásí, že data zapsal
-\item motor -- zajišťuje otáčení ploten; pouzdro motoru je z nemagnetického
+\item motor -- zajišťuje otáčení ploten; pouzdro motoru je z~nemagnetického
   materiálu
 \item rychlost otáčení ploten:
 
   \begin{itemize}
   \tightlist
-  \item u notebookových HDD: 4200 ot./min. - menší spotřeba energie
-  \item u standardních disků: 7200 ot./min.
-  \item u lepších disků: 10000 ot./min.
+  \item u~notebookových HDD: 4200 ot./min. -- menší spotřeba energie
+  \item u~standardních disků: 7200 ot./min.
+  \item u~lepších disků: 10000 ot./min.
   \end{itemize}
 \item disk musí být hermeticky uzavřený
 \item disky jsou náchylné na mechanické rázy
@@ -1023,7 +1024,7 @@ rezerva & & 2~B \\ \hline
     \tightlist
     \item 40 pinový konektor
     \item paralelní rozhraní
-    \item master a slave
+    \item master a~slave
     \end{itemize}
   \item SATA -- úzký kabel, sériový, podporuje Hot swap
   \item SCSI
@@ -1047,7 +1048,7 @@ rezerva & & 2~B \\ \hline
   \begin{itemize}
   \tightlist
   \item asymetrický magnet, stabilizační vrstva
-  \item tenký pól se stará o to aby magnetické pole směřovalo co nejvíce do
+  \item tenký pól se stará o~to aby magnetické pole směřovalo co nejvíce do
     hloubky
   \item široký nástavec má malou hustotu siločar
   \item tenký pól soustředí siločáry do úzkého prostoru umožňující
@@ -1064,22 +1065,22 @@ rezerva & & 2~B \\ \hline
 \item[] \includegraphics[width=10.089cm]{ref/geometrie-disku.png}
 \item popisuje počet stop, sektorů, cylindrů, clusterů, počet hlaviček
 \item Low Level Format -- nízkoúrovňový; je prováděn výrobcem disku
-\item sektor -- nejmenší možná adresovatelná jednotka disku -- původně 512
-  B, dnes 4 kB
+\item sektor -- nejmenší možná adresovatelná jednotka disku -- původně 512~B,
+dnes 4~kB
 \item cylindr -- sada stop se stejným číslem na různých stranách ploten
 \item cluster -- alokační jednotka tvořena operačním systémem -- je nejmenší
   použitelná šířka data pohromadě
 \item velikost clusteru je dána použitým souborovým systémem
-\item cluster je obsazen i když není zcela plný
+\item cluster je obsazen i~když není zcela plný
 \end{itemize}
 
 \paragraph{Prokládání}
 
 \begin{itemize}
 \tightlist
-\item je jednou z metod, která zkracuje dobu čekání
-\item bez prokládání se při čtení se provedou data z 1. sektoru, pošlou se
-  přes řadič aplikaci a je dotaz na další data, pro čtení se musí počkat
+\item je jednou z~metod, která zkracuje dobu čekání
+\item bez prokládání se při čtení se provedou data z~1. sektoru, pošlou se
+  přes řadič aplikaci a~je dotaz na další data, pro čtení se musí počkat
   celou otáčku disku
 \end{itemize}
 
@@ -1089,7 +1090,7 @@ rezerva & & 2~B \\ \hline
 \tightlist
 \item Zone bit recording
 \item zvyšuje kapacitu disku
-\item stopy u středu jsou kratší a mají tím méně sektorů, proto se na vnější
+\item stopy u~středu jsou kratší a~mají tím méně sektorů, proto se na vnější
   stopy dá více sektorů
 \end{itemize}
 
@@ -1120,7 +1121,7 @@ rezerva & & 2~B \\ \hline
   \item SPT -- max počet sektorů na pevném disku
   \item S -- stopa
   \item tato metoda očísluje všechny sektory na pevném disku
-  \item z daného čísla je pak každému přidělena nová 8 bitová adresa
+  \item z~daného čísla je pak každému přidělena nová 8~bitová adresa
   \item jelikož se podle tohoto vztahu vypočte vlastní číslo, není nutné
     znát geometrii disku
   \end{itemize}
@@ -1132,14 +1133,14 @@ rezerva & & 2~B \\ \hline
 \tightlist
 \item formát: 3.5", 2.5"
 \item rozhraní: ATA, SATA
-\item kapacita: v GB, TB
+\item kapacita: v~GB, TB
 \item otáčky: 5400 RPM, 7200 RPM, 10000 RPM
 
   \begin{itemize}
   \tightlist
   \item více otáček → více tepla → je potřeba lepší chlazení
   \end{itemize}
-\item vyrovnávací paměť 2 MB, 16 MB
+\item vyrovnávací paměť 2~MB, 16~MB
 \item přístupová doba: průměrná doba za kterou je disk připraven číst nebo
   zapsat (v ms)
 \item celkový výkon: podle rychlosti
@@ -1155,16 +1156,16 @@ rezerva & & 2~B \\ \hline
 \begin{itemize}
 \tightlist
 \item Self-Monitoring, Analysis and Reporting Technology
-\item provádí monitorování, analyzování a hlášení chyb
+\item provádí monitorování, analyzování a~hlášení chyb
 \item zprávy se posílají operačnímu systému
-\item chyby: předvídatelné a nepředvídatelné
+\item chyby: předvídatelné a~nepředvídatelné
 \item S.M.A.R.T. analyzuje pouze předvídatelné chyby:
 
   \begin{itemize}
   \tightlist
   \item poškození povrchu
   \item poškození hlavy: měkké chyby -- opakované čtení
-  \item poškození motoru: narůstá čas k roztočení disku
+  \item poškození motoru: narůstá čas k~roztočení disku
   \item hlava se vychyluje, není schopno sledovat stopu
   \item poškození vystavovacího mechanismu
   \end{itemize}
@@ -1183,10 +1184,10 @@ rezerva & & 2~B \\ \hline
 \begin{itemize}
 \tightlist
 \item všechny dnešní disky jsou cachované
-\item dochází k vyrovnání rychlosti dat
+\item dochází k~vyrovnání rychlosti dat
 \item cache je statická paměť
 \item zaručuje konstantní rychlost mezi operační pamětí nebo DMA
-\item v disku je řadič, který řídí cache
+\item v~disku je řadič, který řídí cache
 \end{itemize}
 
 \paragraph{Disková pole}
@@ -1198,52 +1199,52 @@ rezerva & & 2~B \\ \hline
   dosažena vyšší spolehlivost
 \item \textbf{RAID} -- redundant array of independent disks -- vícenásobné
   pole nezávislých disků
-\item RAID 0
+\item RAID~0
 
   \begin{itemize}
   \tightlist
-  \item systém postupného čtení a zápisu na více disků
-  \item v jednom okamžiku systém pracuje s jedním diskem a při zaplnění
+  \item systém postupného čtení a~zápisu na více disků
+  \item v~jednom okamžiku systém pracuje s~jedním diskem a~při zaplnění
     stopy se přepne na druhý disk; první si bude mezitím nastavovat
     stopu
   \item je bez zálohování
-  \item při poruše jednoho z disků se systém zhroutí
+  \item při poruše jednoho z~disků se systém zhroutí
   \end{itemize}
-\item RAID 1
+\item RAID~1
 
   \begin{itemize}
   \tightlist
   \item mirroring -- zrcadlení
   \item zapisuje se na disky zároveň
-  \item čte se z disku který je blíž datům
+  \item čte se z~disku který je blíž datům
   \end{itemize}
-\item RAID 5
+\item RAID~5
 
   \begin{itemize}
   \tightlist
   \item paritní informace se ukládají na všechny disky
-  \item minimum disků jsou 3 disky
+  \item minimum disků jsou 3~disky
   \end{itemize}
-\item RAID 6
+\item RAID~6
 
   \begin{itemize}
   \tightlist
-  \item obsahuje 2 paritní disky
-  \item mohou vypadnout 2 disky
+  \item obsahuje 2~paritní disky
+  \item mohou vypadnout 2~disky
   \item pomalejší zápis
   \end{itemize}
-\item RAID 7
+\item RAID~7
 
   \begin{itemize}
   \tightlist
   \item má navíc centrální cache
   \end{itemize}
-\item RAID 10
+\item RAID~10
 
   \begin{itemize}
   \tightlist
-  \item spojení RAID 0 a RAID 1
-  \item data se nejdříve zrcadlí a potom se uloží do pole RAID 0
+  \item spojení RAID~0 a~RAID~1
+  \item data se nejdříve zrcadlí a~potom se uloží do pole RAID~0
   \item použití pro databázové systémy
   \end{itemize}
 \end{itemize}
@@ -1252,20 +1253,20 @@ rezerva & & 2~B \\ \hline
 
 \begin{itemize}
 \tightlist
-\item průměr 12 cm
-\item zaznamená se na něj 84 minut -- 750 MB
-\item malé disky o průměru 8 cm -- až 24 minut -- 210 MB
+\item průměr 12~cm
+\item zaznamená se na něj 84~minut -- 750~MB
+\item malé disky o~průměru 8~cm -- až 24~minut -- 210~MB
 \item stejně velké sektory
-\item princip čtecí a optické hlavy:
+\item princip čtecí a~optické hlavy:
 \item[] \includegraphics[width=12.896cm]{ref/princip-cteci-a-opticke-hlavy.png}
 \item fotodioda -- převádí světelný impuls na elektrický
 \item data jsou poslána na DAC -- digitálně analogový převodník; převádí
   digitální signál na analogový
 \item LAND -- plocha disku
-\item PIT -- díra; v pitu se světlo rozptýlí → žádný odraz → žádné napětí
-\item přechod mezi pitem a landem je logická 1
-\item žádná změna je logická 0
-\item informaci nese každá změna z 1 na 0 a z 0 na 1
+\item PIT -- díra; v~pitu se světlo rozptýlí → žádný odraz → žádné napětí
+\item přechod mezi pitem a~landem je logická~1
+\item žádná změna je logická~0
+\item informaci nese každá změna z~1~na 0~a~z~0~na~1
 \end{itemize}
 
 \subsubsection{CD-RW}
@@ -1273,17 +1274,17 @@ rezerva & & 2~B \\ \hline
 vrstvy:
 \begin{itemize}
   \tightlist
-  \item[] 7. ochranný lak
-  \item[] 6. reflexní fólie
-  \item[] 5. dielektrická vrstva
-  \item[] 4. záznamový film
-  \item[] 3. dielektrická vrstva
-  \item[] 2. předdefinovaná drážka
-  \item[] 1. polykarbonát
+  \item[7.] ochranný lak
+  \item[6.] reflexní fólie
+  \item[5.] dielektrická vrstva
+  \item[4.] záznamový film
+  \item[3.] dielektrická vrstva
+  \item[2.] předdefinovaná drážka
+  \item[1.] polykarbonát
   \newline
   \item datová vrstva je tvořena ze slitiny, která má při původní teplotě
-  krystalickou strukturu -- v této formě má o 10\% vyšší odrazivost
-  \item při zahřátí se z krystalické struktury stane amorfní struktura
+  krystalickou strukturu -- v~této formě má o~10\% vyšší odrazivost
+  \item při zahřátí se z~krystalické struktury stane amorfní struktura
   \item \textbf{zápis}
   \begin{itemize}
     \tightlist
@@ -1293,13 +1294,13 @@ vrstvy:
   \item \textbf{mazání}
   \begin{itemize}
     \tightlist
-    \item výkon 8--10~mW, zahřátím amorfní struktury se z ní stane krystalická
+    \item výkon 8--10~mW, zahřátím amorfní struktury se z~ní stane krystalická
     struktura
     \item krystalická struktura představuje \emph{land}
   \end{itemize}
   \item \textbf{rozhraní}: ATA, SATA, SCSI
-  \item \textbf{přístupová doba}: doba potřebná k nalezení dat na disku; 200~ms,
-  lepší i 100~ms
+  \item \textbf{přístupová doba}: doba potřebná k~nalezení dat na disku; 200~ms,
+  lepší i~100~ms
   \item \textbf{přenosová rychlost}: původní formát CD-DA měl 150~kB/s,
   rychlosti CD-RW jsou násobky této hodnoty: 2x, 4x, ...-- 52x
 \end{itemize}
@@ -1318,7 +1319,7 @@ vrstvy:
       \item constant linear velocity
       \item konstantní datový tok -- stejná přenosová rychlost
       \item rychlost otáček se mění
-      \item u středu 530~RPM, na okraji 230~RPM
+      \item u~středu 530~RPM, na okraji 230~RPM
     \end{itemize}
     \item CAV
     \begin{itemize}
@@ -1333,12 +1334,12 @@ vrstvy:
       \tightlist
       \item partial constant angular velocity
       \item vyšší datový tok
-      \item vyšší výkon u středu
+      \item vyšší výkon u~středu
     \end{itemize}
     \item multi-beam čtení
     \begin{itemize}
       \tightlist
-      \item umí přečíst až 7 stop zárověň
+      \item umí přečíst až 7~stop zárověň
       \item velké přenosové rychlosti: bez zvyšování otáček
     \end{itemize}
   \end{itemize}
@@ -1349,7 +1350,7 @@ vrstvy:
 \begin{itemize}
   \tightlist
   \item \textbf{kalibrační oblast}: nastaví se výkon disku
-  \item \textbf{PMA}: počet stop a jejich umístění
+  \item \textbf{PMA}: počet stop a~jejich umístění
   \item \textbf{session}: může obsahovat jednu nebo více stop jednoho typu
   \item \textbf{lead-in}: začátek každé session
   \item \textbf{lead-out}: konec každé session
@@ -1362,24 +1363,24 @@ vrstvy:
 \begin{itemize}
   \tightlist
   \item eight to fourteen modulation
-  \item překódování dat z 8~b na 14~b CD; z 8~b ba 16~b u DVD
+  \item překódování dat z~8~b na 14~b CD; z~8~b ba 16~b u~DVD
   \item provádí se podle kódovací tabulky
   \item provádí se pro snížení chyb
   \item přeodovaný bit se nazývá \emph{channel bit}
-  \item kanálový bit je přechod mezi 1 a 0
+  \item kanálový bit je přechod mezi 1~a~0
   \item délka landu nebo pitu je počet kanálových bitů
-  \item nikdy se neopakují dvě logické 1 za sebou
+  \item nikdy se neopakují dvě logické 1~za sebou
   \item nejmenší vzdálenost jsou 3~b
   \item max délka je 11~b
-  \item pokud jsou za sebou 14 bitové kódy začínající a končící 1, molo by dojít
-  k chybě \textrightarrow{} mezi kódová slova se vkládají slučovací bity
+  \item pokud jsou za sebou 14~bitové kódy začínající a~končící~1, molo by dojít
+  k~chybě \textrightarrow{} mezi kódová slova se vkládají slučovací bity
 \end{itemize}
 
 \subsubsection{DVD}
 
 \begin{itemize}
   \tightlist
-  \item mechanika je zpětně kompatibilní s CD
+  \item mechanika je zpětně kompatibilní s~CD
   \item průměr 12~cm
   \item tloušťka 1.2~mm
   \item jedna vrstva má kapacitu 4.7~GB
@@ -1388,7 +1389,7 @@ vrstvy:
 \end{itemize}
 
 \begin{minipage}[t]{0.3\textwidth}
-  \textbf{jednovrstvé a \\jednostranné}
+  \textbf{jednovrstvé a~\\jednostranné}
   \begin{itemize}
     \tightlist
     \item[5.] potisk
@@ -1433,9 +1434,9 @@ vrstvy:
   \item \textbf{fyzické}: DVD-ROM, DVD-R, DVD+R, DVD$\pm$RDL, DVD-RAM
   \begin{itemize}
     \tightlist
-    \item DVD-RAM má kruhové stopy jako hard disk, pracuje se s ním jako s hard
+    \item DVD-RAM má kruhové stopy jako hard disk, pracuje se s~ním jako s~hard
     diskem
-    \item slouží k zálohování dat
+    \item slouží k~zálohování dat
     \item lze 100~000x přepsat
   \end{itemize}
   \item \textbf{aplikační formáty}: DVD video, DVD audio, DVD data
@@ -1477,9 +1478,9 @@ stejný kód jako disk
   \item stejná struktura jako DVD
   \item vrstvy jsou do 0.6~mm
   \item méně náchylné na poškrábání
-  \item vlnová délka paprsku stejná jako u Blu-ray: 405~nm
+  \item vlnová délka paprsku stejná jako u~Blu-ray: 405~nm
   \item kapacita jedné vrstvy: 15~GB
-  \item max 3 vrstvy
+  \item max 3~vrstvy
 \end{itemize}
 
 \subsubsection{ISRC}
@@ -1487,7 +1488,7 @@ stejný kód jako disk
 \begin{itemize}
   \tightlist
   \item international standard recording code
-  \item mezinárodní kód pro nahrávky a videoklipy
+  \item mezinárodní kód pro nahrávky a~videoklipy
   \item složení: kód státu, nahrávky, výrobce
   \item mohou přidělovat pouze registrované firmy
   \item je protřeba pokud chceme nahrávky prodávat
@@ -1508,7 +1509,7 @@ stejný kód jako disk
     \item součást různých karet
   \end{itemize}
   \item[] \includegraphics[width=15cm]{ref/blokove-schema-flash-pameti.png}
-  \item {\large ČTE SE PO SLOVECH; ZAPISUJE A MAŽE SE PO BLOCÍCH}
+  \item {\large ČTE SE PO SLOVECH; ZAPISUJE A~MAŽE SE PO BLOCÍCH}
   \item[]
   \begin{minipage}[b]{0.4\textwidth}
     \includegraphics[width=8cm]{ref/flash-tranzistor.png}
@@ -1517,12 +1518,12 @@ stejný kód jako disk
     \begin{itemize}
       \tightlist
       \item floating gate je izolovaná
-      \item elektrony na ní zůstanou díky izolaci z oxidu křemičitého
-      \item nenaprogramovaná buňka nemá náboj na plovoucím hradle = log. 1
-      \item přivedením náboje se naprogramuje = log. 0
+      \item elektrony na ní zůstanou díky izolaci z~oxidu křemičitého
+      \item nenaprogramovaná buňka nemá náboj na plovoucím hradle = log.~1
+      \item přivedením náboje se naprogramuje = log.~0
     \end{itemize}
   \end{minipage}
-  \item všechny buňky v rámci bloku musí být mazány současně
+  \item všechny buňky v~rámci bloku musí být mazány současně
   \item hradlo NAND
   \item lze zapisovat na celou plochu
   \item maximální počet zápisů: 100~000 pro akždou buňku
@@ -1535,8 +1536,8 @@ stejný kód jako disk
 \begin{itemize}
   \tightlist
   \item rychlá vyrovnávací paměť
-  \item mezi CPU a RAM
-  \item cache je i v hard disku
+  \item mezi CPU a~RAM
+  \item cache je i~v hard disku
   \item paměť pro čtení, CPU nevytváří nové položky
   \item druhy
   \begin{itemize}
@@ -1544,16 +1545,16 @@ stejný kód jako disk
     \item \textbf{asociativní}: vyhledává se podle klíče
     \item \textbf{neasociativní}: vyhledává se podle adresy
     \item \textbf{využívající virtuální adresaci}: podle logické adresy
-    \item \textbf{fyzická adresace}: adresa se vypočítá a vyhledá se
+    \item \textbf{fyzická adresace}: adresa se vypočítá a~vyhledá se
     \item \textbf{počet položek na jeden řád}: více-cestnost: 1, 2, 4, 8, ...
     položek
-    \item \textbf{synchronní}: sběrnici je možno použít i pro jiné účely
+    \item \textbf{synchronní}: sběrnici je možno použít i~pro jiné účely
     \item \textbf{asynchronní}: málo se používají pro cache
     \item \textbf{vnitřní}: integrována na čipu procesoru
     \begin{itemize}
       \tightlist
-      \item \textbf{on-die}: na čipu v rámci pouzdra
-      \item \textbf{off-die}: na více čipech v rámci pouzdra
+      \item \textbf{on-die}: na čipu v~rámci pouzdra
+      \item \textbf{off-die}: na více čipech v~rámci pouzdra
     \end{itemize}
     \item \textbf{vnější}
     \begin{itemize}
@@ -1568,15 +1569,15 @@ stejný kód jako disk
     \item \textbf{write back}
     \begin{itemize}
       \tightlist
-      \item data se zapisují do cache a do operační paměti se zapíší až budou
-      potřeba, nebo se zapisují v intervalu
+      \item data se zapisují do cache a~do operační paměti se zapíší až budou
+      potřeba, nebo se zapisují v~intervalu
       \item data se nazapisují při změně
     \end{itemize}
     \item \textbf{write through}: data se zapisují zárověň do operační paměti
   \end{itemize}
-  \item \textbf{transparentní}: sleduje změny v okolí
-  \item \textbf{netransparentní}: nesleduje změny v okolí
-  \item \textbf{víceportová}: napojena na více sběrnic; 1 port pro CPU, 1 port
+  \item \textbf{transparentní}: sleduje změny v~okolí
+  \item \textbf{netransparentní}: nesleduje změny v~okolí
+  \item \textbf{víceportová}: napojena na více sběrnic; 1~port pro CPU, 1~port
   pro RAM
   \item \textbf{podle obsahu}
   \begin{itemize}
@@ -1597,23 +1598,23 @@ stejný kód jako disk
   \item čtení
   \begin{itemize}
     \tightlist
-    \item 4 cestně asociativní -- obsahuje 4x 128 klíčů = 486
-    \item adresa je stejná i pro operační paměť
-    \item adresa je přivedena na dekodér, ten vybere jeden z řádků --
+    \item 4~cestně asociativní -- obsahuje 4x 128 klíčů = 486
+    \item adresa je stejná i~pro operační paměť
+    \item adresa je přivedena na dekodér, ten vybere jeden z~řádků --
     neasociativní vyhledávání
     \item nejvyšších 24~b = klíč -- klíč je komparátorem porovnán proti klíčům
     na vybraném řádku
-    \item nastane shoda: pomocí nejnižších 4~b z adresy (slabika) se vyberou data
+    \item nastane shoda: pomocí nejnižších 4~b z~adresy (slabika) se vyberou data
   \end{itemize}
   \item zápis
   \begin{itemize}
     \tightlist
-    \item ke každému klíči je přiřazen 1 bit pro validitu
+    \item ke každému klíči je přiřazen 1~bit pro validitu
     \item otestuje se platnost
     \item je-li klíč neplatný (validita 0) -- je možno ho použít pro zápis
     \item jsou-li všechny klíče platné, použije se algoritmus LRU -- last
     recently used
-    \item vyhodí nejstarší klíč a zapíše nový
+    \item vyhodí nejstarší klíč a~zapíše nový
   \end{itemize}
 \end{itemize}
 
@@ -1621,15 +1622,15 @@ stejný kód jako disk
 
 \begin{itemize}
   \tightlist
-  \item univerzální sériová sběrnice (mezi procesorem a sběrnicí je řadič)
+  \item univerzální sériová sběrnice (mezi procesorem a~sběrnicí je řadič)
   \item nehrazuje paralerní, sériový port, PS/2
   \item klávesnice, myš
   \item řízení sběrnice master, slave
-  \item až 127 zařízení v síti USB
+  \item až 127 zařízení v~síti USB
   \item podporuje synchronní (isochronní) přenosy
   \item přenosová rychlost od 1~Mb/s--10Gb/s
   \item podporuje plug'n'play (autoconfig), hotswap
-  \item podporuje napájení z USB rozhraní
+  \item podporuje napájení z~USB rozhraní
   \item vrstvená hvězdicová topologie
 \end{itemize}
 
@@ -1637,39 +1638,39 @@ stejný kód jako disk
 
 \begin{itemize}
   \tightlist
-  \item každá USB sběrnice má kořenový HUB vše ostatní je připojeno k němu 
-  \item host controller je implementován hardwarově i softwarově
-  \item navrženo na max 7 úrovní, protože na hubech dochází ke zrácení signálu
-  \item mezi kořenem a posledním zařízením může být maximálně 5 hubů
-  \item host je v systému jediný (počítač) na roli master -- řídí procesy
+  \item každá USB sběrnice má kořenový HUB vše ostatní je připojeno k~němu 
+  \item host controller je implementován hardwarově i~softwarově
+  \item navrženo na max 7~úrovní, protože na hubech dochází ke zrácení signálu
+  \item mezi kořenem a~posledním zařízením může být maximálně 5~hubů
+  \item host je v~systému jediný (počítač) na roli master -- řídí procesy
   \item rozbočovač (HUB) -- obsahuje řadič, opakovač, převaděč
   \item distribuuje nebo shromažďuje přenosy
   \item dokáže překládat rychlosti
   \item napájen ze sběrnice nebo vlastní napájení
-  \item zařízení vysílá a příjmá informace 
+  \item zařízení vysílá a~příjmá informace 
   \item složené zařízení obsahuje vestavěný HUB
   \item downstream od kořenem
   \item upstream ke kořenu
   \item konektor typu A -- na počítači, na HUBu
-  \item konektor typu B -- na tiskárně, mini B, micro B
-  \item konektor typu C -- oboustranný, symetrický, USB 3.1
+  \item konektor typu B -- na tiskárně, mini~B, micro~B
+  \item konektor typu C -- oboustranný, symetrický, USB~3.1
 \end{itemize}
 
 \subsection{Rychlosti}
 
 \begin{tabular}{ll}
-  USB 1.1 -- low speed 1,5~Mb/s & \rdelim\}{3}{1mm}[\hspace{2mm} half duplex] \\
-  \hspace{16mm}-- full speed 12~Mb/s  \\
-  USB 2.0 -- high speed - 480~Mb/s
+  USB 1.1 -- low speed -- 1.5~Mb/s & \rdelim\}{3}{1mm}[\hspace{2mm} half duplex] \\
+  \hspace{16mm}-- full speed -- 12~Mb/s  \\
+  USB 2.0 -- high speed -- 480~Mb/s
 \end{tabular}
 \begin{itemize}
   \tightlist
-  \item USB 3.0, 3.1 -- superspeed - 5~Gb/s, 10~Gb/s \} full duplex
+  \item USB 3.0, 3.1 -- superspeed -- 5~Gb/s, 10~Gb/s \} full duplex
   \begin{itemize}
     \tightlist
     \item verze jsou kompatibilní mezi sebou
-    \item při zapojení pomalejší do rychlejší se komunikuje s nižší rychlostí
-    pouze mezi prvky s nízkou rychlostí -- nezpomalí celek
+    \item při zapojení pomalejší do rychlejší se komunikuje s~nižší rychlostí
+    pouze mezi prvky s~nízkou rychlostí -- nezpomalí celek
   \end{itemize}
 \end{itemize}
 
@@ -1678,10 +1679,10 @@ stejný kód jako disk
 \begin{itemize}
   \tightlist
   \item základní HW počítače
-  \item obsahuje elektrické součástky a konektory
-  \item hlavní úkol propojit součástky v PC a poskytuje napájení
+  \item obsahuje elektrické součástky a~konektory
+  \item hlavní úkol propojit součástky v~PC a~poskytuje napájení
   \item sběrnice = skupina vodičů které komunikují pod stejným protokolem
-  \item deska obsahuje konektory a sloty (konektory pro karty)
+  \item deska obsahuje konektory a~sloty (konektory pro karty)
 \end{itemize}
 
 \includegraphics{ref/blokove-schema-zakladni-desky.png}
@@ -1691,7 +1692,7 @@ stejný kód jako disk
 \begin{itemize}
   \tightlist
   \item nejdůležitější integrované obvody základní desky
-  \item 2 chipy:
+  \item 2~chipy:
   \begin{itemize}
     \tightlist
     \item South bridge
@@ -1707,7 +1708,7 @@ stejný kód jako disk
 \subsection{Severní můstek}
 
 \begin{itemize}
-  \item komunikuje mezi CPU, grafickou kartou a pamětí
+  \item komunikuje mezi CPU, grafickou kartou a~pamětí
 \end{itemize}
 
 \subsection{Jižní můstek}
@@ -1743,7 +1744,7 @@ stejný kód jako disk
 \begin{itemize}
   \tightlist
   \item dříve byl řadič paměti v~severním můstku -- to bylo pomalejší než toto řešení
-  \item paměťových modulů může být až 6
+  \item paměťových modulů může být až~6
 \end{itemize}
 
 \subsection{Typy základních desek}
@@ -1769,7 +1770,7 @@ stejný kód jako disk
   \item basic input and output system
   \item program dodávaný výrobcem
   \item je automaticky spuštěn deskou při spuštění počítače
-  \item umožňuje komunikaci mezi SW a HW
+  \item umožňuje komunikaci mezi SW a~HW
   \item načte konfiguraci z~CMOS paměti
   \item provede POST -- power on self test
   \item dá povel ke spuštění operačního systému
@@ -1779,10 +1780,10 @@ stejný kód jako disk
     \item tam se porvádí konfigurace CPU, RAM, HDD, bootovací sekvence
     \item obsahuje HW monitor -- teplota, RPM větráku
   \end{itemize}
-  \item původně byl BIOS v ROM
+  \item původně byl BIOS v~ROM
   \begin{itemize}
     \tightlist
-    \item dnes v EEPROM nebo ve Flash ROM paměti -- umožňuje aktualizaci
+    \item dnes v~EEPROM nebo ve Flash ROM paměti -- umožňuje aktualizaci
   \end{itemize}
   \item dual BIOS -- jedna část se při aktualizaci neaktualizuje
 \end{itemize}
@@ -1814,7 +1815,7 @@ stejný kód jako disk
   \item deska signál vrátí zpátky
   \item systémem začne proudit elektrický proud
   \item časovač-čítač počle CPU resetovací příkaz -- adresa registru se nastaví na FFF0
-  \item BIOS zkontroluje sám sebe, data v CMOS paměti
+  \item BIOS zkontroluje sám sebe, data v~CMOS paměti
   \item začne probíhat POST; má 3~fáze:
 
   \circled{1}
@@ -1889,6 +1890,8 @@ OBRÁZEK resetu
     HDMI, Display Port -- nejkvalitnější
   \end{itemize}
 \end{itemize}
+
+\newpage
 
 \subsection{CRT}
 
