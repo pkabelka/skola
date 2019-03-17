@@ -1,334 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="114.62049mm"
-   height="95.064369mm"
-   viewBox="0 0 114.62049 95.064369"
-   version="1.1"
-   id="svg8"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="strankovani-fyzicka-adresa.svg">
-  <defs
-     id="defs2" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="274.92969"
-     inkscape:cy="226.69296"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1-7"
-     showgrid="false"
-     fit-margin-left="5"
-     fit-margin-top="5"
-     fit-margin-right="5"
-     fit-margin-bottom="5"
-     inkscape:window-width="1600"
-     inkscape:window-height="837"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata5">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-31.685425,-10.428854)">
-    <g
-       transform="translate(17.639786,14.185392)"
-       id="layer1-7"
-       inkscape:label="Layer 1">
-      <rect
-         style="fill:none;stroke:#000000;stroke-width:0.465;stroke-miterlimit:4;stroke-dasharray:none"
-         y="8.4444962"
-         x="19.278139"
-         height="12.698616"
-         width="62.738869"
-         id="rect10" />
-      <text
-         id="text4528"
-         y="5.1688032"
-         x="27.173996"
-         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-size:4.23333311px;stroke-width:0.26458332"
-           y="5.1688032"
-           x="27.173996"
-           id="tspan4526"
-           sodipodi:role="line">LINEÁRNÍ ADRESA 32b</tspan></text>
-      <text
-         id="text4532"
-         y="12.473337"
-         x="22.727211"
-         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-size:3.52777767px;line-height:0.25;stroke-width:0.26458332"
-           y="12.473337"
-           x="22.727211"
-           sodipodi:role="line"
-           id="tspan937">10b</tspan><tspan
-           style="font-size:3.52777767px;line-height:0.25;stroke-width:0.26458332"
-           y="16.070017"
-           x="22.727211"
-           sodipodi:role="line"
-           id="tspan941">stránkovací</tspan><tspan
-           style="font-size:3.52777767px;line-height:0.25;stroke-width:0.26458332"
-           y="19.666697"
-           x="22.727211"
-           sodipodi:role="line"
-           id="tspan943">adresář</tspan></text>
-      <path
-         inkscape:connector-curvature="0"
-         id="path4560"
-         d="M 68.119082,8.4950892 V 21.07738"
-         style="fill:none;stroke:#000000;stroke-width:0.34569478px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4564"
-         d="M 44.75238,8.4950892 V 20.888392"
-         style="fill:none;stroke:#000000;stroke-width:0.34757376px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <text
-         id="text4568-0"
-         y="14.470108"
-         x="70.455063"
-         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-size:3.52777767px;line-height:0.25;stroke-width:0.26458332"
-           y="14.470108"
-           x="70.455063"
-           sodipodi:role="line"
-           id="tspan945">12b</tspan><tspan
-           style="font-size:3.52777767px;line-height:0.25;stroke-width:0.26458332"
-           y="18.066788"
-           x="70.455063"
-           sodipodi:role="line"
-           id="tspan951">offset</tspan></text>
-      <rect
-         y="49.614582"
-         x="28.537201"
-         height="23.434523"
-         width="14.741072"
-         id="rect4616"
-         style="fill:none;stroke:#000000;stroke-width:0.46499997;stroke-miterlimit:4;stroke-dasharray:none" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4628"
-         d="M 28.531021,64.542328 H 43.164029"
-         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4632"
-         d="M 28.442708,61.048362 H 43.18378"
-         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4634"
-         d="m 22.404631,21.160398 v 41.441936 h 6.028108"
-         style="fill:none;stroke:#000000;stroke-width:0.30360541px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <circle
-         r="2.5390604"
-         cy="62.738255"
-         cx="74.686378"
-         id="path4638"
-         style="fill:none;stroke:#000000;stroke-width:0.46499997;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4640"
-         d="m 72.949132,62.738259 h 3.274052"
-         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4642"
-         d="m 74.686383,61.101232 v 3.170121"
-         style="fill:none;stroke:#000000;stroke-width:0.27017796px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4666"
-         d="m 74.568197,60.39965 v -39.055"
-         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <text
-         id="text4781"
-         y="63.972115"
-         x="88.340126"
-         style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="stroke-width:0.26458332"
-           y="63.972115"
-           x="88.340126"
-           id="tspan4779"
-           sodipodi:role="line">fyzická adresa - 32b</tspan></text>
-      <text
-         id="text4532-1"
-         y="12.461758"
-         x="46.485329"
-         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-size:3.52777767px;line-height:0.25;stroke-width:0.26458332"
-           y="12.461758"
-           x="46.485329"
-           sodipodi:role="line"
-           id="tspan937-7">10b</tspan><tspan
-           style="font-size:3.52777767px;line-height:0.25;stroke-width:0.26458332"
-           y="16.058437"
-           x="46.485329"
-           sodipodi:role="line"
-           id="tspan941-4">stránkovací</tspan><tspan
-           style="font-size:3.52777767px;line-height:0.25;stroke-width:0.26458332"
-           y="19.655117"
-           x="46.485329"
-           sodipodi:role="line"
-           id="tspan943-6">tabulka</tspan></text>
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 77.307712,62.784968 h 9.554887"
-         id="path979"
-         inkscape:connector-curvature="0" />
-      <rect
-         y="49.614582"
-         x="52.160713"
-         height="23.434523"
-         width="14.741072"
-         id="rect4616-3"
-         style="fill:none;stroke:#000000;stroke-width:0.46499997;stroke-miterlimit:4;stroke-dasharray:none" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4628-7"
-         d="M 52.154533,64.542329 H 66.787542"
-         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4632-7"
-         d="M 52.06622,61.048363 H 66.807293"
-         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 43.264257,62.751559 h 2.784945 v 9.246828 h 6.11849"
-         id="path1002"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 52.050743,62.851786 H 49.04396 V 21.15774"
-         id="path1004"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="M 66.951018,62.71815 H 72.02914"
-         id="path1006"
-         inkscape:connector-curvature="0" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="44.159325"
-         y="76.06163"
-         id="text1010"><tspan
-           sodipodi:role="line"
-           id="tspan1008"
-           x="44.159325"
-           y="76.06163"
-           style="stroke-width:0.26458332">20b</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="67.408058"
-         y="59.044952"
-         id="text1010-9"><tspan
-           sodipodi:role="line"
-           id="tspan1008-3"
-           x="67.408058"
-           y="59.044952"
-           style="stroke-width:0.26458332">20b</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="49.578499"
-         y="27.438574"
-         id="text1032"><tspan
-           sodipodi:role="line"
-           id="tspan1030"
-           x="49.578499"
-           y="27.438574"
-           style="stroke-width:0.26458332">řádek ve</tspan><tspan
-           sodipodi:role="line"
-           x="49.578499"
-           y="31.848295"
-           style="stroke-width:0.26458332"
-           id="tspan1034">stánkovací</tspan><tspan
-           sodipodi:role="line"
-           x="49.578499"
-           y="36.258018"
-           style="stroke-width:0.26458332"
-           id="tspan1036">tabulce</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="75.37001"
-         y="28.507652"
-         id="text1040"><tspan
-           sodipodi:role="line"
-           id="tspan1038"
-           x="75.37001"
-           y="28.507652"
-           style="stroke-width:0.26458332">poloha dat</tspan><tspan
-           sodipodi:role="line"
-           x="75.37001"
-           y="32.917374"
-           style="stroke-width:0.26458332"
-           id="tspan1042">ve stránce</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="67.593849"
-         y="68.880081"
-         id="text1046"><tspan
-           sodipodi:role="line"
-           id="tspan1044"
-           x="67.593849"
-           y="68.880081"
-           style="stroke-width:0.26458332">číslo</tspan><tspan
-           sodipodi:role="line"
-           x="67.593849"
-           y="73.289803"
-           style="stroke-width:0.26458332"
-           id="tspan1048">stránky</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="44.159321"
-         y="81.164307"
-         id="text1052"><tspan
-           sodipodi:role="line"
-           id="tspan1050"
-           x="44.159321"
-           y="81.164307"
-           style="stroke-width:0.26458332">počáteční</tspan><tspan
-           sodipodi:role="line"
-           x="44.159321"
-           y="85.574028"
-           style="stroke-width:0.26458332"
-           id="tspan1064">adresa stránky</tspan></text>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg8" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="strankovani-fyzicka-adresa.svg" inkscape:version="0.92.3 (2405546, 2018-03-11)"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="324.908px"
+	 height="269.473px" viewBox="0 0 324.908 269.473" enable-background="new 0 0 324.908 269.473" xml:space="preserve">
+<sodipodi:namedview  fit-margin-left="5" fit-margin-top="5" showgrid="false" inkscape:cy="226.69296" inkscape:cx="274.92969" inkscape:zoom="0.98994949" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base" inkscape:window-maximized="1" inkscape:window-y="-8" inkscape:window-x="-8" inkscape:window-height="837" inkscape:window-width="1600" fit-margin-bottom="5" inkscape:current-layer="layer1-7" inkscape:document-units="mm" inkscape:pageopacity="0.0" fit-margin-right="5" inkscape:pageshadow="2">
+	</sodipodi:namedview>
+<g id="layer1" transform="translate(-31.685425,-10.428854)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+	<g id="layer1-7" transform="translate(17.639786,14.185392)" inkscape:label="Layer 1">
+		<rect id="rect10" x="28.878" y="30.829" fill="none" stroke="#000000" width="177.843" height="35.996"/>
+		<text transform="matrix(1 0 0 1 51.2588 21.5447)" font-family="'HelveticaCE-Regular'" font-size="12">LINEÁRNÍ ADRESA 32b</text>
+		<text transform="matrix(1 0 0 1 38.6553 42.2498)" font-family="'HelveticaCE-Regular'" font-size="10">10b</text>
+		<text transform="matrix(1 0 0 1 38.6553 52.4451)" font-family="'HelveticaCE-Regular'" font-size="10">stránkovací</text>
+		<text transform="matrix(1 0 0 1 38.6553 62.6404)" enable-background="new    "><tspan x="0" y="0" font-family="'HelveticaCE-Regular'" font-size="10">adresá</tspan><tspan x="30.576" y="0" font-family="'MyriadPro-Regular'" font-size="10">ř</tspan></text>
+		<path id="path4560" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M167.325,30.972v35.667"/>
+		<path id="path4564" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M101.089,30.972v35.13"/>
+		<text transform="matrix(1 0 0 1 173.9463 47.91)" font-family="'HelveticaCE-Regular'" font-size="10">12b</text>
+		<text transform="matrix(1 0 0 1 173.9463 58.1053)" font-family="'HelveticaCE-Regular'" font-size="10">offset</text>
+		<rect id="rect4616" x="55.124" y="147.531" fill="none" stroke="#000000" width="41.786" height="66.43"/>
+		<path id="path4628" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M55.106,189.846h41.479"/>
+		<path id="path4632" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M54.856,179.942h41.785"/>
+		<path id="path4634" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M37.74,66.874v117.473h17.088"/>
+		<circle id="path4638" fill="none" stroke="#000000" stroke-linejoin="round" cx="185.94" cy="184.732" r="7.197"/>
+		<path id="path4640" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M181.017,184.732h9.28"/>
+		<path id="path4642" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M185.94,180.092v8.986"/>
+		<path id="path4666" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M185.605,178.103V67.396"/>
+		<text transform="matrix(1 0 0 1 224.6435 188.2303)" font-family="'HelveticaCE-Regular'" font-size="10">fyzická adresa - 32b</text>
+		<text transform="matrix(1 0 0 1 106.001 42.2166)" font-family="'HelveticaCE-Regular'" font-size="10">10b</text>
+		<text transform="matrix(1 0 0 1 106.001 52.4119)" font-family="'HelveticaCE-Regular'" font-size="10">stránkovací</text>
+		<text transform="matrix(1 0 0 1 106.001 62.6072)" font-family="'HelveticaCE-Regular'" font-size="10">tabulka</text>
+		<path id="path979" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M193.371,184.865h27.085"/>
+		<rect id="rect4616-3" x="122.089" y="147.531" fill="none" stroke="#000000" width="41.785" height="66.43"/>
+		<path id="path4628-7" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M122.071,189.846h41.479"/>
+		<path id="path4632-7" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M121.82,179.942h41.786"/>
+		<path id="path1002" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M96.87,184.77h7.895v26.212h17.344"/>
+		<path id="path1004" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M121.776,185.055h-8.522V66.867"/>
+		<path id="path1006" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M164.014,184.676h14.395"/>
+		<text transform="matrix(1 0 0 1 99.4072 222.4998)" font-family="'HelveticaCE-Regular'" font-size="10">20b</text>
+		<text transform="matrix(1 0 0 1 165.3096 174.2635)" font-family="'HelveticaCE-Regular'" font-size="10">20b</text>
+		<text transform="matrix(1 0 0 1 114.7685 84.6717)" enable-background="new    "><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="10">ř</tspan><tspan x="3.27" y="0" font-family="'HelveticaCE-Regular'" font-size="10">ádek ve</tspan></text>
+		<text transform="matrix(1 0 0 1 114.7685 97.1717)" font-family="'HelveticaCE-Regular'" font-size="10">stánkovací</text>
+		<text transform="matrix(1 0 0 1 114.7685 109.6717)" font-family="'HelveticaCE-Regular'" font-size="10">tabulce</text>
+		<text transform="matrix(1 0 0 1 187.8779 87.701)" font-family="'HelveticaCE-Regular'" font-size="10">poloha dat</text>
+		<text transform="matrix(1 0 0 1 187.8779 100.201)" font-family="'HelveticaCE-Regular'" font-size="10">ve stránce</text>
+		<text transform="matrix(1 0 0 1 165.8349 202.1424)" font-family="'ArialMT'" font-size="10">číslo</text>
+		<text transform="matrix(1 0 0 1 165.8349 214.6424)" font-family="'ArialMT'" font-size="10">stránky</text>
+		<text transform="matrix(1 0 0 1 99.4072 236.9647)" font-family="'ArialMT'" font-size="10">počáteční</text>
+		<text transform="matrix(1 0 0 1 99.4072 249.4647)" font-family="'ArialMT'" font-size="10">adresa stránky</text>
+	</g>
+</g>
 </svg>

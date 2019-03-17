@@ -1,261 +1,45 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="142.83887mm"
-   height="68.259178mm"
-   viewBox="0 0 142.83887 68.259179"
-   version="1.1"
-   id="svg948"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="strankovani.svg">
-  <defs
-     id="defs942" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="341.61179"
-     inkscape:cy="87.117915"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     fit-margin-top="5"
-     fit-margin-left="5"
-     fit-margin-right="5"
-     fit-margin-bottom="5"
-     inkscape:window-width="1600"
-     inkscape:window-height="837"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata945">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-17.31814,-1.0131226)">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="27.26149"
-       y="23.583263"
-       id="text952"><tspan
-         sodipodi:role="line"
-         id="tspan950"
-         x="27.26149"
-         y="23.583263"
-         style="stroke-width:0.26458332">mapovací</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="52.117558"
-       y="19.039684"
-       id="text956"><tspan
-         sodipodi:role="line"
-         id="tspan954"
-         x="52.117558"
-         y="19.039684"
-         style="stroke-width:0.26458332">tabulka</tspan><tspan
-         sodipodi:role="line"
-         x="52.117558"
-         y="23.449406"
-         style="stroke-width:0.26458332"
-         id="tspan958">ukazatelů</tspan><tspan
-         sodipodi:role="line"
-         x="52.117558"
-         y="27.859129"
-         style="stroke-width:0.26458332"
-         id="tspan962">adresáře</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="77.240891"
-       y="23.315994"
-       id="text968"><tspan
-         sodipodi:role="line"
-         id="tspan966"
-         x="77.240891"
-         y="23.315994"
-         style="stroke-width:0.26458332">adresářová</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="106.64053"
-       y="23.315994"
-       id="text972"><tspan
-         sodipodi:role="line"
-         id="tspan970"
-         x="106.64053"
-         y="23.315994"
-         style="stroke-width:0.26458332">stránkovací</tspan></text>
-    <rect
-       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect974"
-       width="108.77869"
-       height="17.372519"
-       x="22.45064"
-       y="13.961562" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 48.509419,13.961561 V 31.267262"
-       id="path976"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 72.897764,13.961561 V 31.267262"
-       id="path978"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 101.69605,13.894744 V 31.200447"
-       id="path980"
-       inkscape:connector-curvature="0" />
-    <rect
-       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect982"
-       width="12.473214"
-       height="20.410715"
-       x="32.662514"
-       y="43.729084" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 32.709761,51.099617 H 45.088483"
-       id="path984"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 32.662514,53.178485 H 45.088483"
-       id="path986"
-       inkscape:connector-curvature="0" />
-    <rect
-       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect982-2"
-       width="12.473214"
-       height="20.410715"
-       x="60.37009"
-       y="43.729084" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 60.417337,51.099618 H 72.796059"
-       id="path984-2"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 60.37009,53.178486 H 72.796059"
-       id="path986-1"
-       inkscape:connector-curvature="0" />
-    <rect
-       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect982-0"
-       width="12.473214"
-       height="20.410715"
-       x="89.814926"
-       y="43.729084" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 89.862169,51.099615 H 102.24089"
-       id="path984-0"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 89.814922,53.178483 H 102.24089"
-       id="path986-2"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 26.660136,31.267262 v 20.780205 h 5.946746"
-       id="path1019"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 54.790252,31.33408 v 20.713387 h 5.479027"
-       id="path1021"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 82.786735,31.267262 v 20.780205 h 6.949009"
-       id="path1023"
-       inkscape:connector-curvature="0" />
-    <circle
-       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
-       id="path1025"
-       cx="116.79676"
-       cy="52.047466"
-       r="1.7372519" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 102.33082,52.147694 h 12.66189"
-       id="path1027"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 116.74739,50.228785 V 31.329976"
-       id="path1029"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 45.135141,52.114285 h 4.476765"
-       id="path1033"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 49.611906,52.114285 V 63.005519 H 60.302687"
-       id="path1035"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 72.902156,52.07142 h 4.91369 v 10.819568 h 11.953499"
-       id="path1037"
-       inkscape:connector-curvature="0" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="130.2128"
-       y="53.110855"
-       id="text1041"><tspan
-         sodipodi:role="line"
-         id="tspan1039"
-         x="130.2128"
-         y="53.110855"
-         style="stroke-width:0.26458332">fyzická adresa</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 118.53403,51.980652 h 10.22306"
-       id="path1043"
-       inkscape:connector-curvature="0" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="54.73587"
-       y="9.9384642"
-       id="text1047"><tspan
-         sodipodi:role="line"
-         id="tspan1045"
-         x="54.73587"
-         y="9.9384642"
-         style="font-size:4.23333311px;stroke-width:0.26458332">LINEÁRNÍ ADRESA</tspan></text>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg948" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="strankovani.svg" inkscape:version="0.92.3 (2405546, 2018-03-11)"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="404.898px"
+	 height="193.49px" viewBox="0 0 404.898 193.49" enable-background="new 0 0 404.898 193.49" xml:space="preserve">
+<sodipodi:namedview  fit-margin-left="5" fit-margin-top="5" showgrid="false" inkscape:cy="87.117915" inkscape:cx="341.61179" inkscape:zoom="0.98994949" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base" inkscape:window-maximized="1" inkscape:window-y="-8" inkscape:window-x="-8" inkscape:window-height="837" inkscape:window-width="1600" fit-margin-bottom="5" inkscape:current-layer="layer1" inkscape:document-units="mm" inkscape:pageopacity="0.0" fit-margin-right="5" inkscape:pageshadow="2">
+	</sodipodi:namedview>
+<g id="layer1" transform="translate(-17.31814,-1.0131226)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+	<text transform="matrix(1 0 0 1 45.5044 64.9919)" font-family="'HelveticaCE-Regular'" font-size="10">mapovací</text>
+	<text transform="matrix(1 0 0 1 115.9614 52.113)" font-family="'HelveticaCE-Regular'" font-size="10">tabulka</text>
+	<text transform="matrix(1 0 0 1 115.9614 64.613)" enable-background="new    "><tspan x="0" y="0" font-family="'HelveticaCE-Regular'" font-size="10">ukazatel</tspan><tspan x="37.246" y="0" font-family="'MyriadPro-Regular'" font-size="10">ů</tspan></text>
+	<text transform="matrix(1 0 0 1 115.9614 77.113)" enable-background="new    "><tspan x="0" y="0" font-family="'HelveticaCE-Regular'" font-size="10">adresá</tspan><tspan x="30.576" y="0" font-family="'MyriadPro-Regular'" font-size="10">ř</tspan><tspan x="33.846" y="0" font-family="'HelveticaCE-Regular'" font-size="10">e</tspan></text>
+	<text transform="matrix(1 0 0 1 187.1783 64.2341)" enable-background="new    "><tspan x="0" y="0" font-family="'HelveticaCE-Regular'" font-size="10">adresá</tspan><tspan x="30.576" y="0" font-family="'MyriadPro-Regular'" font-size="10">ř</tspan><tspan x="33.847" y="0" font-family="'HelveticaCE-Regular'" font-size="10">ová</tspan></text>
+	<text transform="matrix(1 0 0 1 270.5161 64.2341)" font-family="'HelveticaCE-Regular'" font-size="10">stránkovací</text>
+	<rect id="rect974" x="31.867" y="37.717" fill="none" stroke="#000000" stroke-linejoin="round" width="308.35" height="49.245"/>
+	<path id="path976" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M105.734,37.717v49.056"/>
+	<path id="path978" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M174.867,37.717v49.056"/>
+	<path id="path980" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M256.5,37.528v49.056"/>
+	<rect id="rect982" x="60.814" y="122.097" fill="none" stroke="#000000" stroke-linejoin="round" width="35.357" height="57.857"/>
+	<path id="path984" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M60.948,142.991h35.09"/>
+	<path id="path986" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M60.814,148.883h35.224"/>
+	
+		<rect id="rect982-2" x="139.355" y="122.097" fill="none" stroke="#000000" stroke-linejoin="round" width="35.357" height="57.857"/>
+	<path id="path984-2" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M139.489,142.991h35.09"/>
+	<path id="path986-1" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M139.355,148.883h35.224"/>
+	
+		<rect id="rect982-0" x="222.821" y="122.097" fill="none" stroke="#000000" stroke-linejoin="round" width="35.357" height="57.857"/>
+	<path id="path984-0" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M222.955,142.991h35.09"/>
+	<path id="path986-2" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M222.821,148.883h35.224"/>
+	<path id="path1019" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M43.799,86.773v58.904h16.857"/>
+	<path id="path1021" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M123.539,86.963v58.715h15.531"/>
+	<path id="path1023" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M202.898,86.773v58.904h19.698"/>
+	<circle id="path1025" fill="none" stroke="#000000" stroke-linejoin="round" cx="299.305" cy="145.677" r="4.925"/>
+	<path id="path1027" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M258.299,145.962h35.892"/>
+	<path id="path1029" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M299.165,140.522V86.951"/>
+	<path id="path1033" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M96.169,145.867h12.69"/>
+	<path id="path1035" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M108.86,145.867v30.873h30.305"/>
+	<path id="path1037" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M174.879,145.746h13.929v30.669h33.884"/>
+	<text transform="matrix(1 0 0 1 337.3345 148.6911)" font-family="'HelveticaCE-Regular'" font-size="10">fyzická adresa</text>
+	<path id="path1043" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M304.229,145.488h28.979"/>
+	<text transform="matrix(1 0 0 1 123.3853 26.3141)" font-family="'HelveticaCE-Regular'" font-size="12">LINEÁRNÍ ADRESA</text>
+</g>
 </svg>

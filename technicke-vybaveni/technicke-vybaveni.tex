@@ -9,6 +9,7 @@
 \usepackage{multirow,bigdelim}
 \usepackage{array}
 \usepackage{enumitem}% list options
+\usepackage{wrapfig}% better floats
 \usepackage{tikz}
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
             \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
@@ -420,10 +421,16 @@
 
 \begin{itemize}
 \tightlist
-\item 2~snímače navzájem posunuty o~$\frac{\pi}{2}$ = 90°
+\item 2~hřídelky navzájem posunuty o~$\frac{\pi}{2}$ = 90°
 \item na hřídelce je clonkové kolečko
-\item světelný paprsek dopadá na senzor podle toho zda prosvítá
+\item každé kolečko má 2~infračervené senzory
+\item v~každý moment dopadá paprsek pouze na jeden, oba nebo žádný senzor na každé clonce
+\item pohyb je detekován podle toho u~které hřídelky je senzor a~který senzor
+zaznamená pohyb první
 \end{itemize}
+\includegraphics{ref/kulickova-mys.png}
+\hspace{2cm}
+\includegraphics{ref/kulickova-mys-senzory.png}
 
 \subsection{DSP -- Digital Signal Processor}
 
@@ -491,7 +498,7 @@ rezerva & & 2~B \\ \hline
 \begin{itemize}
 \tightlist
 \item báze -- počáteční adresa segmentu
-\item limit -- velikost segmentu, musí být menší než offset
+\item limit -- velikost segmentu; musí být větší než offset
 \item práva -- archivní, systémové, obyčejný uživatel
 \item rezerva -- pro \emph{bázi} a~\emph{limit}
 \end{itemize}
@@ -571,7 +578,7 @@ o~virtuální paměť
 \item při swapování nastává zpoždění, proces swapování je velmi pomalý
 \end{itemize}
 
-\section{24. Zásobníkové procesory, módy procesorů}
+\section{Zásobníkové procesory, módy procesorů}
 
 \subsection{Zásobníkové procesory}
 
@@ -1349,7 +1356,7 @@ vrstvy:
 
 \begin{itemize}
   \tightlist
-  \item \textbf{kalibrační oblast}: nastaví se výkon disku
+  \item \textbf{PCA}: kalibrační oblast -- nastaví se výkon disku
   \item \textbf{PMA}: počet stop a~jejich umístění
   \item \textbf{session}: může obsahovat jednu nebo více stop jednoho typu
   \item \textbf{lead-in}: začátek každé session
@@ -1363,7 +1370,7 @@ vrstvy:
 \begin{itemize}
   \tightlist
   \item eight to fourteen modulation
-  \item překódování dat z~8~b na 14~b CD; z~8~b ba 16~b u~DVD
+  \item překódování dat z~8~b na 14~b CD; z~8~b na 16~b u~DVD
   \item provádí se podle kódovací tabulky
   \item provádí se pro snížení chyb
   \item přeodovaný bit se nazývá \emph{channel bit}
@@ -1598,43 +1605,47 @@ stejný kód jako disk
   \item čtení
   \begin{itemize}
     \tightlist
-    \item 4~cestně asociativní -- obsahuje 4x 128 klíčů = 486
+    \item 4~cestně asociativní -- obsahuje 4\texttimes 128 klíčů = 486
     \item adresa je stejná i~pro operační paměť
     \item adresa je přivedena na dekodér, ten vybere jeden z~řádků --
     neasociativní vyhledávání
-    \item nejvyšších 24~b = klíč -- klíč je komparátorem porovnán proti klíčům
-    na vybraném řádku
-    \item nastane shoda: pomocí nejnižších 4~b z~adresy (slabika) se vyberou data
+    \item nejvyšších 21~b = klíč -- klíč je komparátorem porovnán proti klíčům
+    na vybraném řádku -- asociativní vyhledávání
+    \item nastane-li shoda: pomocí nejnižších 4~b z~adresy (slabika) se z~16~B
+    dat vybere jeden byte
   \end{itemize}
   \item zápis
   \begin{itemize}
     \tightlist
     \item ke každému klíči je přiřazen 1~bit pro validitu
     \item otestuje se platnost
-    \item je-li klíč neplatný (validita 0) -- je možno ho použít pro zápis
+    \item je-li klíč neplatný (validita~=~0) -- je možno ho použít pro zápis
     \item jsou-li všechny klíče platné, použije se algoritmus LRU -- last
     recently used
-    \item vyhodí nejstarší klíč a~zapíše nový
+    \item nejstarší klíč přesune do operační paměti a~zapíše nový
   \end{itemize}
 \end{itemize}
 
 \section{USB}
 
-\begin{itemize}
-  \tightlist
-  \item univerzální sériová sběrnice (mezi procesorem a~sběrnicí je řadič)
-  \item nehrazuje paralerní, sériový port, PS/2
-  \item klávesnice, myš
-  \item řízení sběrnice master, slave
-  \item až 127 zařízení v~síti USB
-  \item podporuje synchronní (isochronní) přenosy
-  \item přenosová rychlost od 1~Mb/s--10Gb/s
-  \item podporuje plug'n'play (autoconfig), hotswap
-  \item podporuje napájení z~USB rozhraní
-  \item vrstvená hvězdicová topologie
-\end{itemize}
-
-\includegraphics{ref/usb-structure.png}
+\begin{minipage}[b]{0.5\textwidth}
+  \begin{itemize}
+    \tightlist
+    \item univerzální sériová sběrnice (mezi procesorem a~sběrnicí je řadič)
+    \item nehrazuje paralerní, sériový port, PS/2
+    \item klávesnice, myš
+    \item řízení sběrnice master, slave
+    \item až 127~zařízení v~síti USB
+    \item podporuje synchronní (isochronní) přenosy
+    \item přenosová rychlost od 1~Mb/s--10~Gb/s
+    \item podporuje plug'n'play (autoconfig), hotswap
+    \item podporuje napájení z~USB rozhraní
+    \item vrstvená hvězdicová topologie
+  \end{itemize}
+\end{minipage}%
+\begin{minipage}[t]{0.45\textwidth}
+  \includegraphics[width=8cm]{ref/usb-structure.png}
+\end{minipage}%
 
 \begin{itemize}
   \tightlist
@@ -1687,7 +1698,7 @@ stejný kód jako disk
 
 \includegraphics{ref/blokove-schema-zakladni-desky.png}
 
-\subsection{Chipset}
+\textbf{Chipset}
 
 \begin{itemize}
   \tightlist
@@ -1695,8 +1706,8 @@ stejný kód jako disk
   \item 2~chipy:
   \begin{itemize}
     \tightlist
-    \item South bridge
     \item North bridge
+    \item South bridge
   \end{itemize}
   \item sada vzájemně spolupracujících čipů
   \item řídí činnost základní desky
@@ -1705,47 +1716,35 @@ stejný kód jako disk
   \item může obsahovat integrované karty
 \end{itemize}
 
-\subsection{Severní můstek}
+\textbf{Severní můstek} -- komunikuje mezi CPU, grafickou kartou a~pamětí
 
-\begin{itemize}
-  \item komunikuje mezi CPU, grafickou kartou a~pamětí
-\end{itemize}
+\textbf{Jižní můstek} -- zařizuje komunikaci s~periferiemi, pomalejšími
+zařízeními
 
-\subsection{Jižní můstek}
+\textbf{Clock generator} -- vytváří časový (hodinový) signál pro synchronizované
+operace
 
-\begin{itemize}
-  \item zařizuje komunikaci s~periferiemi, pomalejšími zařízeními
-\end{itemize}
-
-\subsection{Clock generator}
-
-\begin{itemize}
-  \item vytváří časový (hodinový) signál pro synchronizované operace
-\end{itemize}
-
-\subsection{Timer-counter}
-
+\textbf{Timer-counter}
 \begin{itemize}
   \tightlist
   \item odměřuje časové zpoždění
   \item vytváří zpoždění
   \item počítá když se něco opakuje
 \end{itemize}
-  
-\subsection{PCI}
-\begin{itemize}
-  \tightlist
-  \item PCI express rychlejší než PCI
-  \item super IO čip -- myš, klávesnice
-\end{itemize}
 
-\includegraphics{ref/blokove-schema-procesoru-s-jednim-cipem.png}
-
-\begin{itemize}
-  \tightlist
-  \item dříve byl řadič paměti v~severním můstku -- to bylo pomalejší než toto řešení
-  \item paměťových modulů může být až~6
-\end{itemize}
+\begin{minipage}[b]{0.45\textwidth}
+  \textbf{PCI}
+  \begin{itemize}
+    \tightlist
+    \item PCI express rychlejší než PCI
+    \item super IO čip -- myš, klávesnice
+    \item dříve byl řadič paměti v~severním můstku -- to bylo pomalejší než toto řešení
+    \item paměťových modulů může být až~6
+  \end{itemize}
+\end{minipage}%
+\begin{minipage}[b]{0.5\textwidth}
+  \includegraphics[width=8cm]{ref/blokove-schema-procesoru-s-jednim-cipem.png}
+\end{minipage}
 
 \subsection{Typy základních desek}
 
@@ -1786,24 +1785,20 @@ stejný kód jako disk
     \item dnes v~EEPROM nebo ve Flash ROM paměti -- umožňuje aktualizaci
   \end{itemize}
   \item dual BIOS -- jedna část se při aktualizaci neaktualizuje
-\end{itemize}
-
-\textbf{UEFI}
-
-\begin{itemize}
-  \tightlist
-  \item nový standard
-  \item 3D BIOS (3D mód) -- iteraktivní grafické prostředí, ovládání myší
-\end{itemize}
-
-\begin{itemize}
-  \tightlist
   \item BIOS má 3~vrstvy
   \begin{enumerate}
     \item detekce pamětí, zařízení
     \item CMOS paměť -- nevolatilní
     \item ovladače -- integrované, na kartách, v~paměti
   \end{enumerate}
+\end{itemize}
+
+\subsubsection{UEFI}
+
+\begin{itemize}
+  \tightlist
+  \item nový standard
+  \item 3D~BIOS (3D~mód) -- iteraktivní grafické prostředí, ovládání myší
 \end{itemize}
 
 \subsubsection{Start počítače}
@@ -1857,7 +1852,8 @@ stejný kód jako disk
 
 \textbf{Teplý start}: nastane-li nějaká chyba, vynechají se některé testy (př. periferie)
 
-OBRÁZEK resetu
+\includegraphics[width=8cm]{ref/reset-obvod.png}
+\includegraphics[width=8cm]{ref/reset.png}
 
 \begin{itemize}
   \tightlist
@@ -1890,8 +1886,6 @@ OBRÁZEK resetu
     HDMI, Display Port -- nejkvalitnější
   \end{itemize}
 \end{itemize}
-
-\newpage
 
 \subsection{CRT}
 
@@ -2031,5 +2025,9 @@ OBRÁZEK resetu
 
   \item plazmové obrazovky se již nevyrábí, nahradily je LED a~OLED
 \end{itemize}
+
+\subsection{Blokové schéma grafické karty}
+
+\includegraphics{ref/blokove-schema-graficke-karty.png}
 
 \end{document}
