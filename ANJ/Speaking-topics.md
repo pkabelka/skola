@@ -14,7 +14,7 @@
 * capital: Cannbera
 * other cities: 
 	* Sydney
-	* Melbournethe
+	* Melbourne
 * political system: parlament (Queen Elizabeth II)
 * west and center desert east forests
 * flying doctors
