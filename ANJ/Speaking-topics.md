@@ -96,6 +96,7 @@
 # 3. London
 # 4. New York
 * Largest city in usa
+* 5 boroughs - Queens, Manhattan, Bronx, Staten Island and Brooklyn
 * Sights:
 	* Empire state building
 	* Statue of liberty
@@ -105,7 +106,7 @@
 * Netherlands created the city Called it New Amsterdam
 * on border with 2 states New york and Pensylvinia
 * New york knicks (basketball team)
-* New york ranger (ice hockey)
+* New york rangers (ice hockey) a Islanders ty debileee, maj dva týmy
 
 # 5. Australia
 * location: on australia (continent) - south hemisphere
