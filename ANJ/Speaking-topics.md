@@ -5,9 +5,107 @@
 * Queen Elizabeth II.
 * Heir: Prince Charles
 
+//Vojtas xd
+
+* 4 countries:
+	*England
+	*Scotland
+	*Wales
+	*Northern Ireland
+* Constitutional monarchy (Queen elizabeth II)
+* Flag: union jack
+* It's raining man 
+* Capital: London
+* Other cities:
+	* Cardiff – wales
+	* Edinburgh - scotland
+	* Belfast – northern ireland
+	* Brighton – fun place
+* Sports:
+	* Football
+	* Ice hockey and this time they managed to be in national championship happening right now in Bratislava (PogU)
+	* Cricket
+	* Rugby
+	* Tennis – wimbledon
+* England sights:
+	* Brighton
+	* London:
+		* Big ben
+		* Backingheam palace Queen place
+		* London eye
+		* Tower bridge
+		* Piccadilly Circus
+	* Stonehedge
+	* Oxford and Cambridge (boat race)
+* Famous people/bands:
+	* Beatles
+	* William Shakespeare
+	* JK Rowling
+	* Queen
+	* Newston
+* River: Thames
+
+
 # 2. The United States of America
+* Capital city: Washington D.C.
+* Parlament (donald trum*  republikans x democrats)
+* 50 states (own laws):
+	* Alaska
+	* California
+	* Texas
+	* Alabama
+	* Nevada
+	* Florida
+* Flag stars represent number of states
+* Mostly plains sometimes desert
+* $
+* Other cities:
+	* New york
+	* New angels
+	* San francisco
+	* California
+* Sights:
+	* Grand Canyon (arizona)
+	* Statue of Liberty (new york)
+	* White house (DC)
+	* Lincoln memorial (DC)
+	* Washington monument (DC)
+* Animals: 
+	* Eagle
+	* American aligator
+	* Grizzly
+	* Bison
+	* Moose
+	* Coyote
+	* Racoon (in cities)
+	* Skunk
+* Sports:
+	* American football
+	* Soccer
+	* NHL ice hockey
+	* NBA basketball (golden state warriors can suck dicks)
+	* Baseball
+* Famous people:
+	* Elvis Presley
+	* Marilyn Monroe
+	* John F Kenneddy
+	* Martin Luther Kind Jr.
+	* Bil Gates
+	* Michael Jackson
+
 # 3. London
 # 4. New York
+* Largest city in usa
+* Sights:
+	* Empire state building
+	* Statue of liberty
+	* Central park
+	* Brooklyn bridge
+	* Theatre district
+* Netherlands created the city Called it New Amsterdam
+* on border with 2 states New york and Pensylvinia
+* New york knicks (basketball team)
+* New york ranger (ice hockey)
 
 # 5. Australia
 * location: on australia (continent) - south hemisphere
