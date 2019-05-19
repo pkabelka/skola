@@ -4,14 +4,11 @@
 * British Isles = GB + Irsko + ostrůvky okolo
 * Queen Elizabeth II.
 * Heir: Prince Charles
-
-//Vojtas xd
-
 * 4 countries:
-	*England
-	*Scotland
-	*Wales
-	*Northern Ireland
+	* England
+	* Scotland
+	* Wales
+	* Northern Ireland
 * Constitutional monarchy (Queen elizabeth II)
 * Flag: union jack
 * It's raining man 
@@ -37,6 +34,7 @@
 		* Piccadilly Circus
 	* Stonehedge
 	* Oxford and Cambridge (boat race)
+	* Stratford upon Avon (Shakespeare's birhtplace)
 * Famous people/bands:
 	* Beatles
 	* William Shakespeare
@@ -44,7 +42,7 @@
 	* Queen
 	* Newston
 * River: Thames
-
+* Channel Tunnel
 
 # 2. The United States of America
 * Capital city: Washington D.C.
@@ -60,16 +58,19 @@
 * Mostly plains sometimes desert
 * $
 * Other cities:
-	* New york
-	* New angels
-	* San francisco
-	* California
+	* New york (NY)
+	* Los Angels (CA)
+	* San Francisco (CA)
+	* Jacksonville (FL)
+	* Seattle (WS)
+	* Las Vegas (NV)
 * Sights:
-	* Grand Canyon (arizona)
-	* Statue of Liberty (new york)
+	* Grand Canyon (AZ)
+	* Statue of Liberty (NY)
 	* White house (DC)
 	* Lincoln memorial (DC)
 	* Washington monument (DC)
+	* Alcatraz (By San Francisco)
 * Animals: 
 	* Eagle
 	* American aligator
@@ -86,23 +87,42 @@
 	* NBA basketball (golden state warriors can suck dicks)
 	* Baseball
 * Famous people:
+	* Donnie John Drumpf
 	* Elvis Presley
 	* Marilyn Monroe
 	* John F Kenneddy
-	* Martin Luther Kind Jr.
-	* Bil Gates
+	* Martin Luther, co si říká King
+	* Bill Gates
 	* Michael Jackson
 
 # 3. London
+* Population: 8.8 mil
+* Sights:
+	* London Eye
+	* Trafalgar Square
+	* Elizabeth Tower
+	* Buckingham Palace
+	* Westminster Abbey
+	* The Tower
+	* Palace of Westminster
+	* Hyde Park
+	* Tower Bridge
+* Double Decker (red bus)
+* Black taxis
+* River Themes
+* Wembley Stadium (NFL London Games)
+* Heathrow Airport
+
 # 4. New York
 * Largest city in usa
+* JFK Airport
 * 5 boroughs - Queens, Manhattan, Bronx, Staten Island and Brooklyn
 * Sights:
 	* Empire state building
 	* Statue of liberty
 	* Central park
 	* Brooklyn bridge
-	* Theatre district
+	* Broadway theather
 * Netherlands created the city Called it New Amsterdam
 * on border with 2 states New york and Pensylvinia
 * New york knicks (basketball team)
